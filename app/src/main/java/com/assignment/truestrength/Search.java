@@ -7,14 +7,11 @@ import android.widget.ListView;
 import android.widget.SearchView;
 
 
-import java.util.ArrayList;
-
 public class Search extends AppCompatActivity
 {
     ListView listView;
     SearchView searchView;
 
-    ArrayList<String> items = new ArrayList<>();
     String[] tempItems = {"Abs", "Back", "Legs", "Arms"};
 
     ArrayAdapter<String> adapter;
