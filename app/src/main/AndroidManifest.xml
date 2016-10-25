@@ -11,21 +11,27 @@
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="com.assignment.truestrength.MAINACIVITY" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".Programme" />
         <activity android:name=".Progress" />
-        <activity android:name=".Search" />
-        <activity android:name=".Login"></activity>
+
+
+        <activity android:name=".Search"
+            android:screenOrientation="portrait"
+            android:label="Search"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+
+        <activity android:name=".Login"/>
     </application>
 
 </manifest>

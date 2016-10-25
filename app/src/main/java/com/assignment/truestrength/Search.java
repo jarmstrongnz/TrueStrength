@@ -1,21 +1,47 @@
 package com.assignment.truestrength;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.SearchView;
 
-public class Search extends AppCompatActivity {
+
+import java.util.ArrayList;
+
+public class Search extends AppCompatActivity
+{
+    ListView listView;
+    SearchView searchView;
+
+    ArrayList<String> items = new ArrayList<>();
+    String[] tempItems = {"Abs", "Back", "Legs", "Arms"};
+
+    ArrayAdapter<String> adapter;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-    }
 
-    public void clickToMain(View view)
-    {
-        Intent mainActivity = new Intent(this, MainActivity.class);
-        startActivity(mainActivity);
+        listView = (ListView) findViewById(R.id.listView_workouts);
+        searchView = (SearchView) findViewById(R.id.searchView_workouts);
+
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, tempItems);
+        listView.setAdapter(adapter);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText)
+            {
+                adapter.getFilter().filter(newText);
+                return false;
+            }
+        });
     }
 }

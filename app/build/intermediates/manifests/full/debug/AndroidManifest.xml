@@ -30,7 +30,12 @@
         </activity>
         <activity android:name="com.assignment.truestrength.Programme" />
         <activity android:name="com.assignment.truestrength.Progress" />
-        <activity android:name="com.assignment.truestrength.Search" />
+        <activity
+            android:name="com.assignment.truestrength.Search"
+            android:label="Search"
+            android:parentActivityName="com.assignment.truestrength.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
         <activity android:name="com.assignment.truestrength.Login" />
     </application>
 
