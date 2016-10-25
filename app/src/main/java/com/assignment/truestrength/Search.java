@@ -6,7 +6,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
 
-
 public class Search extends AppCompatActivity
 {
     ListView listView;
