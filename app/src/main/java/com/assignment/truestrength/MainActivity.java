@@ -1,6 +1,7 @@
 package com.assignment.truestrength;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -10,8 +11,10 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.View.OnClickListener;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,6 +45,17 @@ public class MainActivity extends AppCompatActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.activity_programme_list, container, false);
+
+            Button button = (Button) rootView.findViewById(R.id.button);
+            button.setOnClickListener(new OnClickListener()
+            {
+                @Override
+                public void onClick(View v)
+                {
+                    Intent progressActivity = new Intent(getActivity(), Progress.class);
+                    startActivity(progressActivity);
+                }
+            });
             return rootView;
         }
     }
