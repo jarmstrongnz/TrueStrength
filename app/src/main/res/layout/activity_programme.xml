@@ -11,19 +11,70 @@
     tools:context="com.assignment.truestrength.Programme">
 
     <TextView
-        android:text="Programme"
+        android:text="@string/exercise_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView2" />
+        android:id="@+id/ExerciseTitle_text"
+        android:textSize="50sp" />
 
     <Button
-        android:text="To_Progress"
+        android:text="@string/to_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
+        android:id="@+id/To_ProgressBtn"
+        android:onClick="clickToProgress"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="# KG\n# Reps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RepBtn3"
+        android:layout_alignBaseline="@+id/RepBtn1"
+        android:layout_alignBottom="@+id/RepBtn1"
+        android:layout_alignEnd="@+id/ExerciseTitle_text"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:text="@string/kg_n_reps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/RepBtn3"
+        android:layout_alignBottom="@+id/RepBtn3"
         android:layout_centerHorizontal="true"
-        android:id="@+id/button2"
-        android:onClick="clickToProgress" />
+        android:id="@+id/RepBtn2" />
+
+    <Button
+        android:text="@string/nextButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RepBtn3"
+        android:layout_alignEnd="@+id/RepBtn3"
+        android:layout_marginTop="79dp"
+        android:id="@+id/NextBtn"
+        android:textSize="60sp" />
+
+    <Button
+        android:text="@string/backButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backBtn"
+        android:textSize="60sp"
+        android:layout_alignBaseline="@+id/NextBtn"
+        android:layout_alignBottom="@+id/NextBtn"
+        android:layout_toStartOf="@+id/To_ProgressBtn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:text="# KG \n# Reps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/RepBtn1"
+        android:layout_below="@+id/ExerciseTitle_text"
+        android:layout_alignStart="@+id/ExerciseTitle_text"
+        tools:ignore="HardcodedText" />
+
 </RelativeLayout>
