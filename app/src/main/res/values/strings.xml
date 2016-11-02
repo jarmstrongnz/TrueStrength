@@ -3,4 +3,9 @@
     <string name="to_main">To_Main</string>
     <string name="search_hit">Abs</string>
     <string name="search_label">Search</string>
+    <string name="kg_n_reps"># KG \n# Reps</string>
+    <string name="nextButtonText"><![CDATA[>]]></string>
+    <string name="exercise_title">Exercise Title</string>
+    <string name="to_progress">To_Progress</string>
+    <string name="backButtonText"><![CDATA[<]]></string>
 </resources>

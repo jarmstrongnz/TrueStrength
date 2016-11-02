@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
         "source": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
