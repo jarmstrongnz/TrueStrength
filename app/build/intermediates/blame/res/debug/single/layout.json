@@ -100,6 +100,10 @@
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_screen_content_include.xml"
     },
     {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\excercise_cardview.xml",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\layout\\excercise_cardview.xml"
+    },
+    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\notification_template_icon_group.xml"
     },
@@ -108,12 +112,12 @@
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_programme.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\layout\\activity_programme.xml"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
@@ -164,12 +168,12 @@
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",

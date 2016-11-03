@@ -6,20 +6,22 @@ import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
-import android.support.v7.app.ActionBar;
+
 
 public class SplashActivity extends AppCompatActivity {
     private final long timer = 3000; // milliseconds
+    private final long tickIterations = 1000; // milliseconds
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        ActionBar myActionBar = getSupportActionBar();
-        myActionBar.hide();
-
         ImageView logo = (ImageView) findViewById(R.id.logo);
+
+        // rids of action bar
+        getSupportActionBar().hide();
 
         // fade in animation
         AlphaAnimation fadeIn = new AlphaAnimation(0.0f, 1.0f);
@@ -27,9 +29,9 @@ public class SplashActivity extends AppCompatActivity {
         fadeIn.setDuration(timer);
         fadeIn.setFillAfter(true);
 
-
-        new CountDownTimer(3000, 1000) {
+        new CountDownTimer(timer, tickIterations) {
             public void onTick(long millisUntilFinished) {
+
             }
 
             public void onFinish() {
@@ -37,13 +39,32 @@ public class SplashActivity extends AppCompatActivity {
                  * then go to login info activity
                  * else go to mainActivity
                  */
-                startMainActivity();
+               if (is_ID_Present())
+                    startMainActivity();
+                else
+                    startLoginActivity();
             }
         }.start();
+
+
     }
+
+    private boolean is_ID_Present() {
+        // search database for user ID
+        // if there is one then load all their data
+        return false;
+    }
+
+    private void startLoginActivity() {
+        Intent loginActivity = new Intent(this, Login.class);
+        startActivity(loginActivity);
+    }
+
 
     private void startMainActivity() {
         Intent mainActivity = new Intent(this, MainActivity.class);
         startActivity(mainActivity);
     }
+
+
 }

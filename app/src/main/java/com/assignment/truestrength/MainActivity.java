@@ -60,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
             button6.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent loginActivity = new Intent(getActivity(), Login.class);
-                    startActivity(loginActivity);
+                    Intent programmeActivity = new Intent(getActivity(), Programme.class);
+                    startActivity(programmeActivity);
                 }
             });
 

@@ -23,7 +23,12 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Programme" />
+        <activity
+            android:name=".Programme"
+            android:label="Exercise Program"
+            android:parentActivityName=".MainActivity"></activity>
+
+
         <activity android:name=".Login" />
     </application>
 
