@@ -1,11 +1,9 @@
 package com.assignment.truestrength;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +13,8 @@ public class Programme extends AppCompatActivity
     //TODO going to be list of exercises in the workout routine
     private List<MyItems> items;
 
+
+    // this class will be each exercise in the workout program
     public class MyItems
     {
         String exerciseName;
@@ -52,7 +52,7 @@ public class Programme extends AppCompatActivity
 
         // performance
         // TODO might delete
-        //recyclerView.setHasFixedSize(true);
+        recyclerView.setHasFixedSize(true);
 
         // use linear layout manager
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -63,12 +63,4 @@ public class Programme extends AppCompatActivity
         ExerciseAdapter adapter = new ExerciseAdapter(items);
         recyclerView.setAdapter(adapter);
     }
-
-    // button listener to go to the progress activity
-    public void clickToProgress(View view)
-    {
-        Intent progressActivity = new Intent(this, Progress.class);
-        startActivity(progressActivity);
-    }
-
 }
