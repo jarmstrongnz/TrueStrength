@@ -31,12 +31,13 @@
         <activity android:name="com.assignment.truestrength.Programme" />
         <activity android:name="com.assignment.truestrength.Progress" />
         <activity
-            android:name="com.assignment.truestrength.Search"
+            android:name="com.assignment.truestrength.UI.Search"
             android:label="Search"
             android:parentActivityName="com.assignment.truestrength.MainActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity android:name="com.assignment.truestrength.Login" />
+        <activity android:name="com.assignment.truestrength.UI.ExerciseList" />
+        <activity android:name="com.assignment.truestrength.UI.ExerciseDetails" />
     </application>
 
 </manifest>
