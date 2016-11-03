@@ -1,6 +1,5 @@
 package com.assignment.truestrength;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -21,7 +20,9 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
 
-import static com.assignment.truestrength.R.id.searchView;
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -69,10 +70,24 @@ public class MainActivity extends AppCompatActivity {
 
     public static class progress_tab_frag extends Fragment {
 
+        LineGraphSeries<DataPoint> series;
+
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.frag_progress, container, false);
+
+            double y, x;
+            x = -5.0;
+
+            GraphView testGraph  = (GraphView) rootView.findViewById(R.id.testGraph);
+            series = new LineGraphSeries<>();
+            for (int i = 0; i<500; i++){
+                x = x + 0.1;
+                y = Math.sin(x);
+                series.appendData(new DataPoint(x, y), true, 500);
+            }
+            testGraph.addSeries(series);
             return rootView;
         }
     }
@@ -81,8 +96,9 @@ public class MainActivity extends AppCompatActivity {
 
         ListView listView;
         SearchView searchView;
+        DatabaseHelper myDb;
 
-        String[] tempItems = {"Abs", "Back", "Legs", "Arms"};
+        String[] exerciseItems = {"Benchpress", "Butterflys", "Dumbbell Curls", "Front Raises", "Incline Situps", "Lat Raises", "Lat Pulldown", "Pull Ups", "Seated Cable Row", "Squat", "Tricep Dips", "Tricep Pushdowns"};
 
         ArrayAdapter<String> adapter;
 
@@ -95,7 +111,10 @@ public class MainActivity extends AppCompatActivity {
             listView = (ListView) rootView.findViewById(R.id.listView_workouts);
             searchView = (SearchView) rootView.findViewById(R.id.searchView_workouts);
 
-            adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, tempItems);
+
+            myDb = new DatabaseHelper(getActivity());
+
+            adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, exerciseItems);
             listView.setAdapter(adapter);
 
             // filters the list based on user input

@@ -2768,11 +2768,11 @@ containing a value of this type.
         public static final int submit_area=0x7f0c006b;
         public static final int tabMode=0x7f0c000f;
         public static final int tabs=0x7f0c0075;
+        public static final int testGraph=0x7f0c0090;
         public static final int text=0x7f0c00a9;
         public static final int text2=0x7f0c00a7;
         public static final int textSpacerNoButtons=0x7f0c0052;
         public static final int textView=0x7f0c008d;
-        public static final int textView3=0x7f0c0090;
         public static final int textView5=0x7f0c0070;
         public static final int text_input_password_toggle=0x7f0c008c;
         public static final int time=0x7f0c009f;
