@@ -10,8 +10,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.View.OnClickListener;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public static class programmes_tab_frag extends Fragment {
+    public static class programmeList_tab_frag extends Fragment {
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -55,11 +55,19 @@ public class MainActivity extends AppCompatActivity {
             View rootView = inflater.inflate(R.layout.frag_programme_list, container, false);
 
             Button button = (Button) rootView.findViewById(R.id.button);
-            button.setOnClickListener(new OnClickListener()
-            {
+            Button button6 = (Button) rootView.findViewById(R.id.button6);
+
+            button6.setOnClickListener(new OnClickListener() {
                 @Override
-                public void onClick(View v)
-                {
+                public void onClick(View v) {
+                    Intent loginActivity = new Intent(getActivity(), Login.class);
+                    startActivity(loginActivity);
+                }
+            });
+
+            button.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
                     Intent programmeActivity = new Intent(getActivity(), Programme.class);
                     startActivity(programmeActivity);
                 }
@@ -80,9 +88,9 @@ public class MainActivity extends AppCompatActivity {
             double y, x;
             x = -5.0;
 
-            GraphView testGraph  = (GraphView) rootView.findViewById(R.id.testGraph);
+            GraphView testGraph = (GraphView) rootView.findViewById(R.id.testGraph);
             series = new LineGraphSeries<>();
-            for (int i = 0; i<500; i++){
+            for (int i = 0; i < 500; i++) {
                 x = x + 0.1;
                 y = Math.sin(x);
                 series.appendData(new DataPoint(x, y), true, 500);
@@ -125,18 +133,16 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 @Override
-                public boolean onQueryTextChange(String newText){
+                public boolean onQueryTextChange(String newText) {
                     adapter.getFilter().filter(newText);
                     return false;
                 }
             });
 
             // button listeners for list.
-            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
-            {
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
-                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l)
-                {
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                     String item = String.valueOf(adapterView.getItemAtPosition(i));
 
                     Toast.makeText(getActivity(), item, Toast.LENGTH_LONG).show();
@@ -158,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new programmes_tab_frag();
+                    return new programmeList_tab_frag();
 
                 case 1:
                     return new progress_tab_frag();

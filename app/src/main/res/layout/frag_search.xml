@@ -3,24 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <SearchView
+            android:id="@+id/searchView_workouts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:id="@+id/searchView_workouts" />
+            android:layout_alignParentEnd="true" />
 
         <ListView
+            android:id="@+id/listView_workouts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            tools:ignore="UnknownId"
-            android:id="@+id/listView_workouts"
             android:layout_below="@+id/searchView"
-            android:layout_marginTop="50dp" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            tools:ignore="UnknownId" />
 
     </RelativeLayout>
 </FrameLayout>

@@ -12,10 +12,10 @@
     tools:context="com.assignment.truestrength.SplashActivity">
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/truestrengthlogo"
-        android:id="@+id/logo"
-        android:background="@android:color/background_light" />
+        android:background="@android:color/background_light"
+        app:srcCompat="@drawable/truestrengthlogo" />
 
 </RelativeLayout>
