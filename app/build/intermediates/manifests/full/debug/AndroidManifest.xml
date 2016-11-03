@@ -31,18 +31,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.assignment.truestrength.Programme" />
-        <activity
-            android:name="com.assignment.truestrength.Progress"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity
-            android:name="com.assignment.truestrength.Search"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
         <activity android:name="com.assignment.truestrength.Login" />
-        <activity
-            android:name="com.assignment.truestrength.ProgrammeList"
-            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

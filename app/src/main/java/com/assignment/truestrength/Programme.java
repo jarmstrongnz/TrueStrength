@@ -13,8 +13,4 @@ public class Programme extends AppCompatActivity {
         setContentView(R.layout.activity_programme);
     }
 
-    public void clickToProgress(View view) {
-        Intent progressActivity = new Intent(this, Progress.class);
-        startActivity(progressActivity);
-    }
 }

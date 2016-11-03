@@ -24,15 +24,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Programme" />
-        <activity android:name=".Progress"
-            android:theme="@style/AppTheme.NoActionBar">
-            </activity>
-        <activity android:name=".Search"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
         <activity android:name=".Login" />
-        <activity android:name=".ProgrammeList"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

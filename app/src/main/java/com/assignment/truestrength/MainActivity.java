@@ -14,7 +14,14 @@ import android.view.LayoutInflater;
 import android.view.View.OnClickListener;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+import android.widget.SearchView;
+import android.widget.Toast;
+
+import static com.assignment.truestrength.R.id.searchView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.activity_programme_list, container, false);
+            View rootView = inflater.inflate(R.layout.frag_programme_list, container, false);
 
             Button button = (Button) rootView.findViewById(R.id.button);
             button.setOnClickListener(new OnClickListener()
@@ -52,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v)
                 {
-                    Intent progressActivity = new Intent(getActivity(), Progress.class);
-                    startActivity(progressActivity);
+                    Intent programmeActivity = new Intent(getActivity(), Programme.class);
+                    startActivity(programmeActivity);
                 }
             });
             return rootView;
@@ -65,17 +72,59 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.activity_progress, container, false);
+            View rootView = inflater.inflate(R.layout.frag_progress, container, false);
             return rootView;
         }
     }
 
     public static class exercises_tab_frag extends Fragment {
 
+        ListView listView;
+        SearchView searchView;
+
+        String[] tempItems = {"Abs", "Back", "Legs", "Arms"};
+
+        ArrayAdapter<String> adapter;
+
+
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.activity_search, container, false);
+            View rootView = inflater.inflate(R.layout.frag_search, container, false);
+
+            listView = (ListView) rootView.findViewById(R.id.listView_workouts);
+            searchView = (SearchView) rootView.findViewById(R.id.searchView_workouts);
+
+            adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, tempItems);
+            listView.setAdapter(adapter);
+
+            // filters the list based on user input
+            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                @Override
+                public boolean onQueryTextSubmit(String query) {
+                    return false;
+                }
+
+                @Override
+                public boolean onQueryTextChange(String newText){
+                    adapter.getFilter().filter(newText);
+                    return false;
+                }
+            });
+
+            // button listeners for list.
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l)
+                {
+                    String item = String.valueOf(adapterView.getItemAtPosition(i));
+
+                    Toast.makeText(getActivity(), item, Toast.LENGTH_LONG).show();
+                }
+            });
+
+
             return rootView;
         }
     }
