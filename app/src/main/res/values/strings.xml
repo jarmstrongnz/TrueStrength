@@ -8,4 +8,6 @@
     <string name="exercise_title">Exercise Title</string>
     <string name="to_progress">To_Progress</string>
     <string name="backButtonText"><![CDATA[<]]></string>
+    <string name="extra_information">Extra information</string>
+    <string name="heading">Heading</string>
 </resources>

@@ -1,410 +1,6 @@
 [
     {
-        "outputFile": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl-rES\\values-gl-rES.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 111,
-                    "endOffset": 162
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 111,
-                        "endOffset": 162
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 167,
-                    "endColumn": 107,
-                    "endOffset": 270
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 167,
-                        "endColumn": 107,
-                        "endOffset": 270
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 275,
-                    "endColumn": 122,
-                    "endOffset": 393
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 275,
-                        "endColumn": 122,
-                        "endOffset": 393
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 398,
-                    "endColumn": 111,
-                    "endOffset": 505
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 398,
-                        "endColumn": 111,
-                        "endOffset": 505
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 510,
-                    "endColumn": 107,
-                    "endOffset": 613
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 510,
-                        "endColumn": 107,
-                        "endOffset": 613
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 618,
-                    "endColumn": 84,
-                    "endOffset": 698
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 618,
-                        "endColumn": 84,
-                        "endOffset": 698
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 703,
-                    "endColumn": 101,
-                    "endOffset": 800
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 703,
-                        "endColumn": 101,
-                        "endOffset": 800
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 805,
-                    "endColumn": 125,
-                    "endOffset": 926
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 805,
-                        "endColumn": 125,
-                        "endOffset": 926
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 931,
-                    "endColumn": 83,
-                    "endOffset": 1010
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 931,
-                        "endColumn": 83,
-                        "endOffset": 1010
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 1015,
-                    "endColumn": 80,
-                    "endOffset": 1091
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 1015,
-                        "endColumn": 80,
-                        "endOffset": 1091
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 1096,
-                    "endColumn": 81,
-                    "endOffset": 1173
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1096,
-                        "endColumn": 81,
-                        "endOffset": 1173
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 1178,
-                    "endColumn": 106,
-                    "endOffset": 1280
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1178,
-                        "endColumn": 106,
-                        "endOffset": 1280
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 1285,
-                    "endColumn": 108,
-                    "endOffset": 1389
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1285,
-                        "endColumn": 108,
-                        "endOffset": 1389
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1394,
-                    "endColumn": 98,
-                    "endOffset": 1488
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1394,
-                        "endColumn": 98,
-                        "endOffset": 1488
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1493,
-                    "endColumn": 107,
-                    "endOffset": 1596
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1493,
-                        "endColumn": 107,
-                        "endOffset": 1596
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 1601,
-                    "endColumn": 102,
-                    "endOffset": 1699
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1601,
-                        "endColumn": 102,
-                        "endOffset": 1699
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 1704,
-                    "endColumn": 106,
-                    "endOffset": 1806
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1704,
-                        "endColumn": 106,
-                        "endOffset": 1806
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 19,
-                    "startColumn": 4,
-                    "startOffset": 1811,
-                    "endColumn": 121,
-                    "endOffset": 1928
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1811,
-                        "endColumn": 121,
-                        "endOffset": 1928
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 20,
-                    "startColumn": 4,
-                    "startOffset": 1933,
-                    "endColumn": 99,
-                    "endOffset": 2028
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1933,
-                        "endColumn": 99,
-                        "endOffset": 2028
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 21,
-                    "startColumn": 4,
-                    "startOffset": 2033,
-                    "endColumn": 81,
-                    "endOffset": 2110
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 2033,
-                        "endColumn": 81,
-                        "endOffset": 2110
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 2115,
-                    "endColumn": 100,
-                    "endOffset": 2211
-                },
-                "from": {
-                    "file": "D:\\AndroidStudioProjects\\Git\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 2115,
-                        "endColumn": 100,
-                        "endOffset": 2211
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl-rES\\values-gl-rES.xml",
+        "outputFile": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl-rES\\values-gl-rES.xml",
         "map": [
             {
                 "to": {
@@ -415,7 +11,7 @@
                     "endOffset": 212
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -434,7 +30,7 @@
                     "endOffset": 320
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -453,7 +49,7 @@
                     "endOffset": 443
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -472,7 +68,7 @@
                     "endOffset": 555
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -491,7 +87,7 @@
                     "endOffset": 663
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -510,7 +106,7 @@
                     "endOffset": 748
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -529,7 +125,7 @@
                     "endOffset": 850
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -548,7 +144,7 @@
                     "endOffset": 976
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -567,7 +163,7 @@
                     "endOffset": 1060
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -586,7 +182,7 @@
                     "endOffset": 1141
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -605,7 +201,7 @@
                     "endOffset": 1223
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -624,7 +220,7 @@
                     "endOffset": 1330
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -643,7 +239,7 @@
                     "endOffset": 1439
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -662,7 +258,7 @@
                     "endOffset": 1538
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -681,7 +277,7 @@
                     "endOffset": 1646
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -700,7 +296,7 @@
                     "endOffset": 1749
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -719,7 +315,7 @@
                     "endOffset": 1856
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -738,7 +334,7 @@
                     "endOffset": 1978
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -757,7 +353,7 @@
                     "endOffset": 2078
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -776,7 +372,7 @@
                     "endOffset": 2354
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -795,7 +391,7 @@
                     "endOffset": 2486
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -814,7 +410,7 @@
                     "endOffset": 2681
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -833,7 +429,7 @@
                     "endOffset": 2812
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -852,7 +448,7 @@
                     "endOffset": 2947
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -871,7 +467,7 @@
                     "endOffset": 3168
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -890,7 +486,7 @@
                     "endOffset": 3388
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -909,7 +505,7 @@
                     "endOffset": 3522
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -928,7 +524,7 @@
                     "endOffset": 3704
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -947,7 +543,7 @@
                     "endOffset": 3826
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -966,7 +562,7 @@
                     "endOffset": 4021
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -985,7 +581,7 @@
                     "endOffset": 4154
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -1004,7 +600,7 @@
                     "endOffset": 4293
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -1023,7 +619,7 @@
                     "endOffset": 4465
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -1042,7 +638,7 @@
                     "endOffset": 4595
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -1061,7 +657,7 @@
                     "endOffset": 4789
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -1080,7 +676,7 @@
                     "endOffset": 4935
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -1099,7 +695,7 @@
                     "endOffset": 5187
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values-gl-rES\\common_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values-gl-rES\\common_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -1118,7 +714,7 @@
                     "endOffset": 5454
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -1137,7 +733,7 @@
                     "endOffset": 5581
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -1156,7 +752,7 @@
                     "endOffset": 5692
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -1175,7 +771,7 @@
                     "endOffset": 5892
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -1194,7 +790,7 @@
                     "endOffset": 6029
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -1213,7 +809,7 @@
                     "endOffset": 6253
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -1232,7 +828,7 @@
                     "endOffset": 6394
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -1251,7 +847,7 @@
                     "endOffset": 6576
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -1270,7 +866,7 @@
                     "endOffset": 6672
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -1289,7 +885,7 @@
                     "endOffset": 6771
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -1308,7 +904,7 @@
                     "endOffset": 6886
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-gl-rES\\base_strings.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -1327,7 +923,7 @@
                     "endOffset": 6968
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -1346,7 +942,7 @@
                     "endOffset": 7069
                 },
                 "from": {
-                    "file": "C:\\Users\\Brogan\\Documents\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
+                    "file": "D:\\AndroidStudioProjects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
