@@ -28,8 +28,16 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.assignment.truestrength.Programme" />
-        <activity android:name="com.assignment.truestrength.Progress" />
+        <activity
+            android:name="com.assignment.truestrength.Programme"
+            android:label="Exercise Program"
+            android:parentActivityName="com.assignment.truestrength.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.assignment.truestrength.Progress"
+            android:label="Progress"
+            android:parentActivityName="com.assignment.truestrength.MainActivity" >
+        </activity>
         <activity
             android:name="com.assignment.truestrength.Search"
             android:label="Search"
