@@ -1,0 +1,7 @@
+#Fri Nov 04 12:12:01 NZDT 2016
+base.0=C\:\\Users\\Declan\\Documents\\Assignment\\TrueStrength\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_494fd25b605aa1223ad44281020e8c015b6cb751
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Declan\\Documents\\Assignment\\TrueStrength\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_e9c00807c7e8f3a18c6f5869fdbba28afe2c0246\\classes.dex
+base.1=C\:\\Users\\Declan\\Documents\\Assignment\\TrueStrength\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_e9c00807c7e8f3a18c6f5869fdbba28afe2c0246
+file.0=C\:\\Users\\Declan\\Documents\\Assignment\\TrueStrength\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_494fd25b605aa1223ad44281020e8c015b6cb751\\classes.dex

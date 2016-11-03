@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_5528acecc52f71458c33a21dab9aa19a9745c576\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_f567acf7bb92425f56c92a37786b097e563c60b2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_48f068539ef1361c09bb15288526421c4af7c488\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1d19f21b0f9ade8e81df7c7463c8f7c6218fd1e4">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_494fd25b605aa1223ad44281020e8c015b6cb751\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_167d737980b35fcfa1d02f828e0ae83c3e649244\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_7507a45cd0299b51951974ebe7f213777d91dbc6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_7eaf87c00c00a39cca75780ac4a0c6b86f704608\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_dfa68771b266a302e5b4a449507125c5f0990ff0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_ea62e989d007739dd0d0a943b8f36afaeb56b4e0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_336995deeafe8fd17aa342c6b8a751bb1306021b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_5f17f18b587cb6d6d41369685e7e8de16e52e23a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_e3e33402c2c4891f8fa56059730f756150f93e47\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="971f6f902dcc7cf788f5fdf1e50b7a0c9f4dbbab">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e9c00807c7e8f3a18c6f5869fdbba28afe2c0246\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_2a350f71cf54da6f421550cf535bdc6518bd3035\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_b4d1c3b6e967d477405a3305e80a4bdaf6c89aa6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_4d6343481101e97bc2f940d92c446b63ce3e72a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_60a31205b463941576190c738363dba3c99fcd92\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Declan\Documents\Assignment\TrueStrength\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_1589e80057f7b7433de5c7d3a39ca501f5ccf1dd\classes.dex" />
+    </item>
+
+</items>
