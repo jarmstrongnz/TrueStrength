@@ -8,21 +8,24 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
-import android.widget.SearchView;
-import android.widget.Toast;
 
+import com.assignment.truestrength.Adapter.DeclanExerciseAdapter;
+import com.assignment.truestrength.Exercise_InfoClasses.ExerciseData;
+import com.assignment.truestrength.Exercise_InfoClasses.ExerciseGetterSetter;
+import com.assignment.truestrength.UI.ExerciseDetails;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -100,15 +103,21 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public static class exercises_tab_frag extends Fragment {
+    public static class exercises_tab_frag extends Fragment implements DeclanExerciseAdapter.ItemClickCallBack {
 
-        ListView listView;
-        SearchView searchView;
-        DatabaseHelper myDb;
-
-        String[] exerciseItems = {"Benchpress", "Butterflys", "Dumbbell Curls", "Front Raises", "Incline Situps", "Lat Raises", "Lat Pulldown", "Pull Ups", "Seated Cable Row", "Squat", "Tricep Dips", "Tricep Pushdowns"};
-
-        ArrayAdapter<String> adapter;
+        private static final String BUNDLE_EXTRAS = "BUNDLE_EXTRAS";
+        private static final String exercise_name = "exercise_name";
+        private static final String exercise_type = "exercise_type";
+        private static final String exercise_worked = "exercise_worked";
+        private static final String exercise_other = "exercise_other";
+        private static final String exercise_equipment = "exercise_equipment";
+        private static final String exercise_level = "exercise_level";
+        private static final String exercise_force = "exercise_force";
+        private static final String exercise_img1 = "exercise_img1";
+        private static final String exercise_img2 = "exercise_img2";
+        private RecyclerView recView;
+        private DeclanExerciseAdapter adapter;
+        private ArrayList listData;
 
 
         @Override
@@ -116,42 +125,41 @@ public class MainActivity extends AppCompatActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.frag_search, container, false);
 
-            listView = (ListView) rootView.findViewById(R.id.listView_workouts);
-            searchView = (SearchView) rootView.findViewById(R.id.searchView_workouts);
+            listData = (ArrayList) ExerciseData.getListData();
 
+            recView = (RecyclerView) rootView.findViewById(R.id.rec_list);
+            recView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-            myDb = new DatabaseHelper(getActivity());
+            adapter = new DeclanExerciseAdapter(listData, getActivity());
+            recView.setAdapter(adapter);
 
-            adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, exerciseItems);
-            listView.setAdapter(adapter);
-
-            // filters the list based on user input
-            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-                @Override
-                public boolean onQueryTextSubmit(String query) {
-                    return false;
-                }
-
-                @Override
-                public boolean onQueryTextChange(String newText) {
-                    adapter.getFilter().filter(newText);
-                    return false;
-                }
-            });
-
-            // button listeners for list.
-            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                    String item = String.valueOf(adapterView.getItemAtPosition(i));
-
-                    Toast.makeText(getActivity(), item, Toast.LENGTH_LONG).show();
-                }
-            });
-
+            adapter.setItemClickCallBack(this);
 
             return rootView;
         }
+
+        @Override
+        public void onItemClick(int p) {
+            ExerciseGetterSetter item = (ExerciseGetterSetter) listData.get(p);
+
+            Intent i = new Intent(getActivity(), ExerciseDetails.class);
+            Bundle extras = new Bundle();
+
+            extras.putString(exercise_name, item.getExercise_Name());
+            extras.putString(exercise_type, item.getExercise_type());
+            extras.putString(exercise_worked, item.getExercise_worked());
+            extras.putString(exercise_other, item.getExercise_other());
+            extras.putString(exercise_equipment, item.getExercise_equipment());
+            extras.putString(exercise_level, item.getExercise_level());
+            extras.putString(exercise_force, item.getExercise_force());
+            extras.putInt(exercise_img1, item.getExercise_img1());
+            extras.putInt(exercise_img2, item.getExercise_img2());
+
+
+            i.putExtra(BUNDLE_EXTRAS, extras);
+            startActivity(i);
+        }
+
     }
 
     public class SectionsPagerAdapter extends FragmentPagerAdapter {

@@ -39,7 +39,7 @@ public class SplashActivity extends AppCompatActivity {
                  * then go to login info activity
                  * else go to mainActivity
                  */
-               if (is_ID_Present())
+                if (is_ID_Present())
                     startMainActivity();
                 else
                     startLoginActivity();

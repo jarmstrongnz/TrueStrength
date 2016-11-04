@@ -35,6 +35,7 @@
             android:label="Exercise Program"
             android:parentActivityName="com.assignment.truestrength.MainActivity" />
         <activity android:name="com.assignment.truestrength.Login" />
+        <activity android:name="com.assignment.truestrength.UI.ExerciseDetails" />
     </application>
 
 </manifest>
