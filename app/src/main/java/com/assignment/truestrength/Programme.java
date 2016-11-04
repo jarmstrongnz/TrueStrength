@@ -1,35 +1,56 @@
 package com.assignment.truestrength;
 
-import android.os.Bundle;
+import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Programme extends AppCompatActivity {
+public class Programme extends AppCompatActivity
+{
+
+    DatabaseHelper myDB;
+
     //TODO going to be list of exercises in the workout routine
     private List<MyItems> items;
 
-    private void createData() {
-        items = new ArrayList<>();
+    // this class will be each exercise in the workout program
 
-        items.add(new MyItems("Bicep Curls", "190", R.drawable.bicepcurl));
-        items.add(new MyItems("Sit Ups", "500", R.drawable.sipups));
-        items.add(new MyItems("Bench Press", "8000", R.drawable.benchpress));
 
-    }
+//    private void createData ()
+  //  {
+    //    items = new ArrayList<>();
+//
+
+  //  }
+
+    String progID;
+    Bundle progIDdata;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_programme);
 
-        // TODO this is where we get info from database
-        createData();
+        myDB = new DatabaseHelper(this);
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
+        progIDdata = getIntent().getExtras();
+        progID = progIDdata.getString("progID");
+
+        items = myDB.getProgExArray(progID);
+
+              items.add(new MyItems(/*R.drawable.bicepcurl, */"Bicep Curls", new String[] {"10kg", "12kg", "15kg"}, new String[] {"5reps", "10reps", "15reps"}));
+           items.add(new MyItems( /*R.drawable.sipups, */"Sit Ups", new String[] {"10kg", "12kg", "15kg"}, new String[] {"5reps", "10reps", "15reps"}));
+              items.add(new MyItems(/*R.drawable.benchpress, */"Bench Press", new String[] {"10kg", "12kg", "15kg"}, new String[] {"5reps", "10reps", "15reps"}));
+
+        // TODO this is where we get info from database
+        //createData ();
+
+        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.my_recycler_view);
 
         // performance
         // TODO might delete
@@ -43,18 +64,5 @@ public class Programme extends AppCompatActivity {
         // The adapter that i created - Brogan
         ExerciseAdapter adapter = new ExerciseAdapter(items);
         recyclerView.setAdapter(adapter);
-    }
-
-    // this class will be each exercise in the workout program
-    public class MyItems {
-        String exerciseName;
-        String reps;
-        int photoId;
-
-        MyItems(String exerciseName, String reps, int photoId) {
-            this.exerciseName = exerciseName;
-            this.reps = reps;
-            this.photoId = photoId;
-        }
     }
 }

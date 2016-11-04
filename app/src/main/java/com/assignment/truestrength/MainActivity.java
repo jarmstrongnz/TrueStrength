@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent programmeActivity = new Intent(getActivity(), Programme.class);
+                    programmeActivity.putExtra("progID", "P001");
                     startActivity(programmeActivity);
                 }
             });
@@ -72,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent programmeActivity = new Intent(getActivity(), Programme.class);
+                    programmeActivity.putExtra("progID", "P000");
                     startActivity(programmeActivity);
                 }
             });
