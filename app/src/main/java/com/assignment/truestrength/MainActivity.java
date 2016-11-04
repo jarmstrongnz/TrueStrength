@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             GraphView testGraph = (GraphView) rootView.findViewById(R.id.testGraph);
             series = new LineGraphSeries<>();
             for (int i = 0; i < 500; i++) {
-                x = x + 0.1;
+                x = x + 0.11;
                 y = Math.sin(x);
                 series.appendData(new DataPoint(x, y), true, 500);
             }
