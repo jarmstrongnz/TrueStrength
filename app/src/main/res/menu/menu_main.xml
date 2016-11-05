@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <!--
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"                Declaring a menu that utilises the android namespace
+    xmlns:app="http://schemas.android.com/apk/res-auto"                             Menu to utilise the app namespace
+    xmlns:tools="http://schemas.android.com/tools"                                  Menu to utilise the tools namespace
+    tools:context=".MainActivity">                                                  Menu to be associated with MainActivity
+    -->
+
+        <!--
+     <group android:checkableBehavior="single">     Declares a menu group where only one item can be checked (use radio buttons)
+        -->
+
+
+
+        <item
+            android:id="@+id/menu_about"
+            android:orderInCategory="1"
+            app:showAsAction="never"
+            android:title="About" />
+
+        <!--
+         <item                                      Declaring a menu item
+            android:id="@+id/menu_yellow"              Item's id is "menu_yellow"
+            android:orderInCategory="3"             Item to be listed 3rd in the menu group
+            app:showAsAction="never"                Item never to be placed in the app bar, instead list it in the overflow menu
+            android:title="@string/yellow_string" />   Title to contain the string with id "yellow_string"
+        -->
+
+</menu>

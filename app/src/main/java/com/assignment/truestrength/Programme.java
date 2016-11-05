@@ -75,18 +75,8 @@ public class Programme extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(progName);
         builder.setMessage(Html.fromHtml(s));
-        builder.setPositiveButton("OK", null);
+        builder.setPositiveButton(Html.fromHtml("<b>START WORKOUT</b>"), null);
         AlertDialog dialog = builder.show();
 
-/*        View v = LayoutInflater.from(this).inflate(R.layout.activity_summary, null);
-        TextView summaryText = (TextView) v.findViewById(R.id.summaryText);
-        summaryText.setText(Html.fromHtml(s));
-
-
-        AlertDialog.Builder a_builder = new AlertDialog.Builder(this);
-        a_builder.setView(v);
-        AlertDialog alert = a_builder.create();
-        alert.show();
-*/
     }
 }

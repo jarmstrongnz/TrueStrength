@@ -7,11 +7,14 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -32,13 +35,17 @@ public class MainActivity extends AppCompatActivity {
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
 
+    Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        toolbar.inflateMenu(R.menu.menu_main);
 
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
@@ -49,6 +56,38 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu_main, menu); // Inflate the menu; this adds items (using menu_main.xml) to the action bar if it is present.
+        return super.onCreateOptionsMenu(menu);
+
+    } // end of onCreateOptionsMenu
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+
+            case R.id.menu_about:
+
+                // load the about page as a alert dialog
+
+                View v = LayoutInflater.from(MainActivity.this).inflate(R.layout.activity_about, null);
+
+                AlertDialog.Builder a_builder = new AlertDialog.Builder(MainActivity.this);
+                a_builder.setView(v);
+                AlertDialog alert = a_builder.create();
+                alert.show();
+
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        } // End of menu switch
+
+    } // End of onOptionsItemSelected event
 
     public static class programmeList_tab_frag extends Fragment {
 
