@@ -1,38 +1,41 @@
 package com.assignment.truestrength;
 
-import android.database.Cursor;
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class Programme extends AppCompatActivity
-{
+import static android.media.CamcorderProfile.get;
+
+public class Programme extends AppCompatActivity {
 
     DatabaseHelper myDB;
-
-    //TODO going to be list of exercises in the workout routine
-    private List<MyItems> items;
+    String progID;
 
     // this class will be each exercise in the workout program
 
 
 //    private void createData ()
-  //  {
+    //  {
     //    items = new ArrayList<>();
 //
 
-  //  }
-
-    String progID;
+    //  }
     Bundle progIDdata;
+    //TODO going to be list of exercises in the workout routine
+    private List<MyItems> items;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_programme);
 
@@ -42,15 +45,12 @@ public class Programme extends AppCompatActivity
         progID = progIDdata.getString("progID");
 
         items = myDB.getProgExArray(progID);
-
-              items.add(new MyItems(/*R.drawable.bicepcurl, */"Bicep Curls", new String[] {"10kg", "12kg", "15kg"}, new String[] {"5reps", "10reps", "15reps"}));
-           items.add(new MyItems( /*R.drawable.sipups, */"Sit Ups", new String[] {"10kg", "12kg", "15kg"}, new String[] {"5reps", "10reps", "15reps"}));
-              items.add(new MyItems(/*R.drawable.benchpress, */"Bench Press", new String[] {"10kg", "12kg", "15kg"}, new String[] {"5reps", "10reps", "15reps"}));
+        String progName = myDB.getProgName(progID);
 
         // TODO this is where we get info from database
         //createData ();
 
-        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.my_recycler_view);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
 
         // performance
         // TODO might delete
@@ -64,5 +64,29 @@ public class Programme extends AppCompatActivity
         // The adapter that i created - Brogan
         ExerciseAdapter adapter = new ExerciseAdapter(items);
         recyclerView.setAdapter(adapter);
+
+
+        String s = "";
+
+        for (int i = 0; i < items.size(); i++) {
+            s = s + "<b>" + items.get(i).exerciseName + "</b><br />\n\nSet 1\t\t\t\tSet 2\t\t\t\tSet3<br />" + items.get(i).rep0 + " Reps\t\t\t\t " + items.get(i).rep1 + " Reps\t\t\t\t" + items.get(i).rep2 + " Reps<br /><br /><br />";
+        }
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(progName);
+        builder.setMessage(Html.fromHtml(s));
+        builder.setPositiveButton("OK", null);
+        AlertDialog dialog = builder.show();
+
+/*        View v = LayoutInflater.from(this).inflate(R.layout.activity_summary, null);
+        TextView summaryText = (TextView) v.findViewById(R.id.summaryText);
+        summaryText.setText(Html.fromHtml(s));
+
+
+        AlertDialog.Builder a_builder = new AlertDialog.Builder(this);
+        a_builder.setView(v);
+        AlertDialog alert = a_builder.create();
+        alert.show();
+*/
     }
 }

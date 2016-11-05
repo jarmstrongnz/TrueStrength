@@ -67,6 +67,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db); // Calling the onCreate method
     }
 
+    public String getProgName(String progID){
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        String progName = "";
+
+        Cursor crs = db.rawQuery("SELECT programmeName FROM programme WHERE programmeID = '" + progID + "'", null);
+
+        int i = 0;
+        while (crs.moveToNext()) {
+            progName = crs.getString(crs.getColumnIndex("programmeName"));
+        }
+        crs.close();
+        return progName;
+    }
+
     public List<MyItems> getProgExArray(String progID) {
 
         SQLiteDatabase db = this.getReadableDatabase();
