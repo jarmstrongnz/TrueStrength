@@ -1,0 +1,7 @@
+#Mon Nov 07 17:43:42 NZDT 2016
+base.0=C\:\\Users\\Declan\\Documents\\GitHub\\TrueStrength-test2jonny\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_7a42fb7acd1ecee5497222283de6677a61dbf2a3
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Declan\\Documents\\GitHub\\TrueStrength-test2jonny\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_d0f690aae2d8c46b1741d85ab8fd4f2a9a517424\\classes.dex
+base.1=C\:\\Users\\Declan\\Documents\\GitHub\\TrueStrength-test2jonny\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_d0f690aae2d8c46b1741d85ab8fd4f2a9a517424
+file.0=C\:\\Users\\Declan\\Documents\\GitHub\\TrueStrength-test2jonny\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_7a42fb7acd1ecee5497222283de6677a61dbf2a3\\classes.dex
