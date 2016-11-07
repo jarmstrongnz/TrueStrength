@@ -32,18 +32,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE sessionExercise (sessionExerciseID INTEGER PRIMARY KEY AUTOINCREMENT, programmeExerciseID TEXT REFERENCES programme(programmeID), sessionID INTEGER REFERENCES session(sessionID), set1reps INTEGER, set1weight INTEGER, set2reps INTEGER, set2weight INTEGER, set3reps INTEGER, set3weight INTEGER);");
         db.execSQL("INSERT INTO programme (programmeID, programmeName)VALUES ('P000', 'Fat to Fit');");
         db.execSQL("INSERT INTO programme (programmeID, programmeName)VALUES ('P001', 'Fun Fitness');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E000', 'Benchpress', 'R.drawable.dbbenchpress');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E001', 'Butterflys', 'R.drawable.dbbutterflies');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E002', 'Front Raises', 'R.drawable.dbfrontraises');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E003', 'Lat Raises', 'R.drawable.dblatraises');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E004', 'Tricep Pushdowns', 'R.drawable.dbtriceppushdown');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E005', 'Tricep Dips', 'R.drawable.dbtricepdips');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E006', 'Incline Situps', 'R.drawable.dbdeclinecrunch');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E007', 'Squat', 'R.drawable.dbsquats');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E008', 'Pull Ups', 'R.drawable.dbpullups');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E009', 'Dumbbell Curls', 'R.drawable.dbbicepcurls');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E010', 'Lat Pulldown', 'R.drawable.dblatpulldown');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E011', 'Seated Cable Row', 'R.drawable.dbseatedcablerow');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E000', 'Benchpress', 'dbbenchpress');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E001', 'Butterflys', 'dbbutterflies');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E002', 'Front Raises', 'dbfrontraises');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E003', 'Lat Raises', 'dblatraises');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E004', 'Tricep Pushdowns', 'dbtriceppushdown');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E005', 'Tricep Dips', 'dbtricepdips');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E006', 'Incline Situps', 'dbdeclinecrunch');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E007', 'Squat', 'dbsquats');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E008', 'Pull Ups', 'dbpullups');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E009', 'Dumbbell Curls', 'dbbicepcurls');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E010', 'Lat Pulldown', 'dblatpulldown');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E011', 'Seated Cable Row', 'dbseatedcablerow');");
         db.execSQL("INSERT INTO programmeExercise (programmeExerciseID, programmeID, exerciseID, sets, set1repsDef, set2repsDef, set3repsDef, set1weightDef, set2weightDef, set3weightDef)VALUES ('PE000', 'P000', 'E000', 3, 6, 8, 12, 0, 0, 0);");
         db.execSQL("INSERT INTO programmeExercise (programmeExerciseID, programmeID, exerciseID, sets, set1repsDef, set2repsDef, set3repsDef, set1weightDef, set2weightDef, set3weightDef)VALUES ('PE001', 'P000', 'E001', 3, 6, 8, 12, 0, 0, 0);");
         db.execSQL("INSERT INTO programmeExercise (programmeExerciseID, programmeID, exerciseID, sets, set1repsDef, set2repsDef, set3repsDef, set1weightDef, set2weightDef, set3weightDef)VALUES ('PE002', 'P000', 'E002', 3, 6, 8, 12, 0, 0, 0);");
@@ -67,7 +67,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db); // Calling the onCreate method
     }
 
-    public String getProgName(String progID){
+    public String getProgName(String progID) {
         SQLiteDatabase db = this.getReadableDatabase();
 
         String progName = "";
@@ -82,40 +82,90 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return progName;
     }
 
-    public void setSet1reps (int n, String exName){
+    public void setSet1reps(int n, String exName) {
         SQLiteDatabase db = this.getReadableDatabase();
         db.execSQL("UPDATE sessionExercise SET set1reps = " + n + " WHERE sessionExerciseID IN (SELECT MAX(sessionExerciseID) FROM sessionExercise, programmeExercise, exercise WHERE sessionExercise.programmeExerciseID = programmeExercise.programmeExerciseID AND programmeExercise.exerciseID = exercise.exerciseID AND exerciseName = '" + exName + "');");
     }
 
-    public void setSet2reps (int n, String exName){
+    public void setSet2reps(int n, String exName) {
         SQLiteDatabase db = this.getReadableDatabase();
         db.execSQL("UPDATE sessionExercise SET set2reps = " + n + " WHERE sessionExerciseID IN (SELECT MAX(sessionExerciseID) FROM sessionExercise, programmeExercise, exercise WHERE sessionExercise.programmeExerciseID = programmeExercise.programmeExerciseID AND programmeExercise.exerciseID = exercise.exerciseID AND exerciseName = '" + exName + "');");
     }
 
-    public void setSet3reps (int n, String exName){
+    public void setSet3reps(int n, String exName) {
         SQLiteDatabase db = this.getReadableDatabase();
         db.execSQL("UPDATE sessionExercise SET set3reps = " + n + " WHERE sessionExerciseID IN (SELECT MAX(sessionExerciseID) FROM sessionExercise, programmeExercise, exercise WHERE sessionExercise.programmeExerciseID = programmeExercise.programmeExerciseID AND programmeExercise.exerciseID = exercise.exerciseID AND exerciseName = '" + exName + "');");
     }
 
-    public void setSet1weight (int n, String exName){
+    public void setSet1weight(int n, String exName) {
         SQLiteDatabase db = this.getReadableDatabase();
 
         db.execSQL("UPDATE programmeExercise SET set1weightDef = " + n + " WHERE programmeExerciseID IN (SELECT programmeExerciseID FROM programmeExercise, exercise WHERE programmeExercise.exerciseID = exercise.exerciseID AND exerciseName = '" + exName + "');");
         db.execSQL("UPDATE sessionExercise SET set1weight = " + n + " WHERE sessionExerciseID IN (SELECT MAX(sessionExerciseID) FROM sessionExercise, programmeExercise, exercise WHERE sessionExercise.programmeExerciseID = programmeExercise.programmeExerciseID AND programmeExercise.exerciseID = exercise.exerciseID AND exerciseName = '" + exName + "');");
     }
 
-    public void setSet2weight (int n, String exName){
+    public void setSet2weight(int n, String exName) {
         SQLiteDatabase db = this.getReadableDatabase();
 
         db.execSQL("UPDATE programmeExercise SET set2weightDef = " + n + " WHERE programmeExerciseID IN (SELECT programmeExerciseID FROM programmeExercise, exercise WHERE programmeExercise.exerciseID = exercise.exerciseID AND exerciseName = '" + exName + "');");
         db.execSQL("UPDATE sessionExercise SET set2weight = " + n + " WHERE sessionExerciseID IN (SELECT MAX(sessionExerciseID) FROM sessionExercise, programmeExercise, exercise WHERE sessionExercise.programmeExerciseID = programmeExercise.programmeExerciseID AND programmeExercise.exerciseID = exercise.exerciseID AND exerciseName = '" + exName + "');");
     }
 
-    public void setSet3weight (int n, String exName){
+    public void setSet3weight(int n, String exName) {
         SQLiteDatabase db = this.getReadableDatabase();
 
         db.execSQL("UPDATE programmeExercise SET set3weightDef = " + n + " WHERE programmeExerciseID IN (SELECT programmeExerciseID FROM programmeExercise, exercise WHERE programmeExercise.exerciseID = exercise.exerciseID AND exerciseName = '" + exName + "');");
         db.execSQL("UPDATE sessionExercise SET set3weight = " + n + " WHERE sessionExerciseID IN (SELECT MAX(sessionExerciseID) FROM sessionExercise, programmeExercise, exercise WHERE sessionExercise.programmeExerciseID = programmeExercise.programmeExerciseID AND programmeExercise.exerciseID = exercise.exerciseID AND exerciseName = '" + exName + "');");
+    }
+
+    public int getNumSessions() {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        int num = 0;
+
+        Cursor crs = db.rawQuery("SELECT COUNT(*) FROM SESSION;", null);
+
+        int i = 0;
+        while (crs.moveToNext()) {
+            num = crs.getInt(crs.getColumnIndex("COUNT(*)"));
+        }
+        crs.close();
+        return num;
+
+    }
+
+    public int[] getTotalWeight() {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        int[] totalWeightArr = new int[getNumSessions()];
+
+        Cursor crs = db.rawQuery("SELECT SUM(set1reps*set1weight+set2reps*set2weight+set3reps*set3weight) as total FROM SESSIONEXERCISE GROUP BY sessionID;", null);
+
+        int i = 0;
+        while (crs.moveToNext()) {
+            int totalWeight = crs.getInt(crs.getColumnIndex("total"));
+            totalWeightArr[i] = totalWeight;
+            i++;
+        }
+
+        crs.close();
+        return totalWeightArr;
+
+    }
+
+    public String getLatestTotalWeight() {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        String totalWeightCurr = null;
+
+        Cursor crs = db.rawQuery("SELECT SUM(set1reps*set1weight+set2reps*set2weight+set3reps*set3weight) as total FROM SESSIONEXERCISE WHERE sessionID = (SELECT sessionID FROM session ORDER BY sessionID DESC LIMIT 1); GROUP BY sessionID;", null);
+
+        int i = 0;
+        while (crs.moveToNext()) {
+            totalWeightCurr = crs.getString(crs.getColumnIndex("total"));
+        }
+        crs.close();
+        return totalWeightCurr;
     }
 
     public List<MyItems> getProgExArray(String progID) {
@@ -138,7 +188,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("INSERT INTO session (programmeID, sessionDate) VALUES ('" + progID + "', datetime());");
 
         for (i = 0; i < progExIDArr.length; i++) {
-            db.execSQL("INSERT INTO sessionExercise (sessionID, programmeExerciseID, set1reps, set2reps, set3reps, set1weight, set2weight, set3weight) VALUES ((SELECT sessionID FROM session ORDER BY sessionID DESC LIMIT 1), '"+ progExIDArr[i] +"', (SELECT set1repsdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set2repsdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set3repsdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set1weightdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set2weightdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set3weightdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'));");
+            db.execSQL("INSERT INTO sessionExercise (sessionID, programmeExerciseID, set1reps, set2reps, set3reps, set1weight, set2weight, set3weight) VALUES ((SELECT sessionID FROM session ORDER BY sessionID DESC LIMIT 1), '" + progExIDArr[i] + "', (SELECT set1repsdef FROM programmeExercise WHERE programmeExerciseID = '" + progExIDArr[i] + "'), (SELECT set2repsdef FROM programmeExercise WHERE programmeExerciseID = '" + progExIDArr[i] + "'), (SELECT set3repsdef FROM programmeExercise WHERE programmeExerciseID = '" + progExIDArr[i] + "'), (SELECT set1weightDef FROM programmeExercise WHERE programmeExerciseID = '" + progExIDArr[i] + "'), (SELECT set2weightDef FROM programmeExercise WHERE programmeExerciseID = '" + progExIDArr[i] + "'), (SELECT set3weightDef FROM programmeExercise WHERE programmeExerciseID = '" + progExIDArr[i] + "'));");
         }
 
         Cursor crs1 = db.rawQuery("SELECT sessionExerciseID FROM sessionExercise WHERE sessionID = (SELECT sessionID FROM session ORDER BY sessionID DESC LIMIT 1);", null);
@@ -158,6 +208,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor crs_setsreps;
 
         String exerciseName = null;
+        String exercisePic = null;
         String set1reps = null;
         String set1weight = null;
         String set2reps = null;
@@ -167,11 +218,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
         for (i = 0; i < sessExIDArr.length; i++) {
-            crs_eN = db.rawQuery("SELECT exerciseName FROM exercise, programmeExercise, sessionExercise WHERE exercise.exerciseID = programmeExercise.exerciseID AND programmeExercise.programmeExerciseID = sessionExercise.programmeExerciseID AND sessionExerciseID = " + sessExIDArr[i] + ";", null);
+            crs_eN = db.rawQuery("SELECT exerciseName, exercisePic FROM exercise, programmeExercise, sessionExercise WHERE exercise.exerciseID = programmeExercise.exerciseID AND programmeExercise.programmeExerciseID = sessionExercise.programmeExerciseID AND sessionExerciseID = " + sessExIDArr[i] + ";", null);
             crs_setsreps = db.rawQuery("SELECT 	set1reps, set1weight, set2reps, set2weight, set3reps, set3weight FROM sessionExercise WHERE sessionExerciseID = " + sessExIDArr[i] + ";", null);
 
             while (crs_eN.moveToNext()) {
                 exerciseName = crs_eN.getString(crs_eN.getColumnIndex("exerciseName"));
+                exercisePic = crs_eN.getString(crs_eN.getColumnIndex("exercisePic"));
             }
 
             while (crs_setsreps.moveToNext()) {
@@ -183,7 +235,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 set3weight = crs_setsreps.getString(crs_setsreps.getColumnIndex("set3weight"));
             }
 
-            exItems.add(new MyItems(exerciseName, new String[]{set1weight, set2weight, set3weight}, new String[]{set1reps, set2reps, set3reps}));
+            exItems.add(new MyItems(exercisePic, exerciseName, new String[]{set1weight, set2weight, set3weight}, new String[]{set1reps, set2reps, set3reps}));
             crs_eN.close();
             crs_setsreps.close();
         }

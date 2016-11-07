@@ -8,8 +8,10 @@ public class ExerciseGetterSetter {
     private String exercise_worked;
     private String exercise_other;
     private String exercise_equipment;
+    private String exercise_desc;
     private String exercise_level;
     private String exercise_force;
+    private String  exercise_vid;
     private int exercise_img1, exercise_img2;
 
 
@@ -97,6 +99,25 @@ public class ExerciseGetterSetter {
 
     public void setExercise_img2(int exercise_img2) {
         this.exercise_img2 = exercise_img2;
+    }
+
+    //exercise_vid Variable Getter & Setter
+    public String getExercise_vid() {
+        return exercise_vid;
+    }
+
+    public void setExercise_vid(String exercise_vid) {
+        this.exercise_vid = exercise_vid;
+    }
+
+
+    //exercise_desc Variable Getter & Setter
+    public String getExercise_desc() {
+        return exercise_desc;
+    }
+
+    public void setExercise_desc(String exercise_desc) {
+        this.exercise_desc = exercise_desc;
     }
 
 

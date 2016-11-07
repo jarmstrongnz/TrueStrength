@@ -8,6 +8,10 @@
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\summarycard.xml",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\layout\\summarycard.xml"
+    },
+    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.0\\res\\layout\\design_navigation_item_subheader.xml"
     },
@@ -194,6 +198,10 @@
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.0\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_summary.xml",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\layout\\activity_summary.xml"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow_custom.xml",

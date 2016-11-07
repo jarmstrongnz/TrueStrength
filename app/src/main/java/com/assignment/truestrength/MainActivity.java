@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -50,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        getSupportActionBar().getThemedContext();
+        toolbar.setTitleTextColor(getResources().getColor(R.color.colorAccent));
 
 
         toolbar.inflateMenu(R.menu.menu_main);
@@ -137,12 +142,20 @@ public class MainActivity extends AppCompatActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.frag_progress, container, false);
 
+            DatabaseHelper myDB = new DatabaseHelper(getContext());
+
+            int size = myDB.getNumSessions();
+            int[] totalWeight = myDB.getTotalWeight();
+
+            DataPoint[] values = new DataPoint[size];
+            for (int i=0; i<size; i++) {
+                Integer xi = i;
+                Integer yi = totalWeight[i];
+                DataPoint v = new DataPoint(xi, yi);
+                values[i] = v;
+            }
             GraphView graph = (GraphView) rootView.findViewById(R.id.testGraph);
-            LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[]{
-                    new DataPoint(0, 1),
-                    new DataPoint(1, 5),
-                    new DataPoint(2, 3)
-            });
+            LineGraphSeries<DataPoint> series = new LineGraphSeries<>(values);
             graph.addSeries(series);
             return rootView;
         }
@@ -160,6 +173,8 @@ public class MainActivity extends AppCompatActivity {
         private static final String exercise_force = "exercise_force";
         private static final String exercise_img1 = "exercise_img1";
         private static final String exercise_img2 = "exercise_img2";
+        private static final String exercise_desc = "exercise_desc";
+
         private RecyclerView recView;
         private DeclanExerciseAdapter adapter;
         private ArrayList listData;
@@ -199,6 +214,7 @@ public class MainActivity extends AppCompatActivity {
             extras.putString(exercise_force, item.getExercise_force());
             extras.putInt(exercise_img1, item.getExercise_img1());
             extras.putInt(exercise_img2, item.getExercise_img2());
+            extras.putString(exercise_desc, item.getExercise_desc());
 
 
             i.putExtra(BUNDLE_EXTRAS, extras);

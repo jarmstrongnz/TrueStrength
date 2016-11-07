@@ -6,14 +6,14 @@ package com.assignment.truestrength;
 
 public class MyItems
 {
-    //       int photoId;
+    String photoId;
     String exerciseName;
     String weight0, weight1, weight2;
     String rep0, rep1, rep2;
 
-    MyItems(/*int photoId, */String exerciseName,String[] weights, String[] reps)
+    MyItems(String photoId, String exerciseName,String[] weights, String[] reps)
     {
-//            this.photoId = photoId;
+            this.photoId = photoId;
         this.exerciseName = exerciseName;
         this.weight0 = weights[0];
         this.weight1 = weights[1];
