@@ -17,7 +17,7 @@ public class ExerciseData {
             "Butterfly",
             "Dumbbell Curls",
             "Hanging Leg Raise",
-            "3/4 Sit-Up",
+            "Decline Situp",
             "Side Lateral Raise",
             "Straight-Arm Pulldown",
             "Pull Ups",

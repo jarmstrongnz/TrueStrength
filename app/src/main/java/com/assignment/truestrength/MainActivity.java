@@ -30,6 +30,15 @@ import com.assignment.truestrength.UI.ExerciseDetails;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.SearchView;
+import android.widget.Toast;
+
+import java.util.Arrays;
+import java.util.List;
 
 import java.util.ArrayList;
 
@@ -161,7 +170,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public static class exercises_tab_frag extends Fragment implements DeclanExerciseAdapter.ItemClickCallBack {
+    public static class exercises_tab_frag extends Fragment// implements DeclanExerciseAdapter.ItemClickCallBack
+    {
 
         private static final String BUNDLE_EXTRAS = "BUNDLE_EXTRAS";
         private static final String exercise_name = "exercise_name";
@@ -175,34 +185,110 @@ public class MainActivity extends AppCompatActivity {
         private static final String exercise_img2 = "exercise_img2";
         private static final String exercise_desc = "exercise_desc";
 
-        private RecyclerView recView;
+        //private RecyclerView recView;
+        private ListView listView;
+
         private DeclanExerciseAdapter adapter;
-        private ArrayList listData;
+        private List<ExerciseGetterSetter> listData;
+
+        private SearchView searchView;
+        private ArrayAdapter<String> listAdapter;
 
 
         @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
+        public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+
+        {
             View rootView = inflater.inflate(R.layout.frag_search, container, false);
 
-            listData = (ArrayList) ExerciseData.getListData();
+            listData = ExerciseData.getListData();
 
-            recView = (RecyclerView) rootView.findViewById(R.id.rec_list);
-            recView.setLayoutManager(new LinearLayoutManager(getActivity()));
+            //recView = (RecyclerView) rootView.findViewById(R.id.rec_list);
+            //recView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
             adapter = new DeclanExerciseAdapter(listData, getActivity());
-            recView.setAdapter(adapter);
+            //recView.setAdapter(adapter);
 
-            adapter.setItemClickCallBack(this);
+            // adapter.setItemClickCallBack(this);
 
+            /**
+             * START Added by Brogan
+             */
+            // create search view and list view
+            searchView = (SearchView) rootView.findViewById(R.id.searchView_workouts);
+            listView = (ListView) rootView.findViewById(R.id.search_listView);
+
+            // create temp array for adapter list
+            String[] _listData = new String[listData.size()];
+
+            // assign the temp array
+            for(int i = 0; i < _listData.length; i++)
+                _listData[i] = adapter.getListData().get(i).getExercise_Name();
+
+            // sort array
+            Arrays.sort(_listData);
+
+            // create list adapter for filtering
+            listAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, _listData);
+
+            // assign new list adapter to list view
+            listView.setAdapter(listAdapter);
+
+            // filters the list based on user input
+            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener()
+            {
+                @Override
+                public boolean onQueryTextSubmit(String query) {
+                    return false;
+                }
+
+                @Override
+                public boolean onQueryTextChange(String newText)
+                {
+                    listAdapter.getFilter().filter(newText);
+                    return false;
+                }
+            });
+
+            // button listeners for list.
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l)
+                {
+                    String item = String.valueOf(adapterView.getItemAtPosition(i));
+
+                    // get data based on what item was clicked
+                    BundleDataAndSendToNewActivity(item);
+                }
+            });
+            /**
+             * END Added by Brogan
+             */
             return rootView;
         }
 
-        @Override
-        public void onItemClick(int p) {
-            ExerciseGetterSetter item = (ExerciseGetterSetter) listData.get(p);
 
-            Intent i = new Intent(getActivity(), ExerciseDetails.class);
+
+
+        private void BundleDataAndSendToNewActivity(String name)
+        {
+            ExerciseGetterSetter item = null;
+
+            for(int j = 0; j < listData.size(); j++)
+            {
+                String temp = adapter.getListData().get(j).getExercise_Name();
+                if(temp.equals(name))
+                    item = adapter.getListData().get(j);
+            }
+
+            if(item == null)
+            {
+                Toast.makeText(getActivity(), "Error!", Toast.LENGTH_LONG).show();
+                return;
+            }
+
+            Intent intent = new Intent(getActivity(), ExerciseDetails.class);
             Bundle extras = new Bundle();
 
             extras.putString(exercise_name, item.getExercise_Name());
@@ -216,11 +302,19 @@ public class MainActivity extends AppCompatActivity {
             extras.putInt(exercise_img2, item.getExercise_img2());
             extras.putString(exercise_desc, item.getExercise_desc());
 
+            intent.putExtra(BUNDLE_EXTRAS, extras);
+            startActivity(intent);
 
-            i.putExtra(BUNDLE_EXTRAS, extras);
-            startActivity(i);
+
+
         }
 
+        /*
+        @Override
+        public void onItemClick(int p)
+        {
+        }
+        */
     }
 
     public class SectionsPagerAdapter extends FragmentPagerAdapter {

@@ -38,7 +38,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E003', 'Lat Raises', 'dblatraises');");
         db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E004', 'Tricep Pushdowns', 'dbtriceppushdown');");
         db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E005', 'Tricep Dips', 'dbtricepdips');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E006', 'Incline Situps', 'dbdeclinecrunch');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E006', 'Decline Situps', 'dbdeclinecrunch');");
         db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E007', 'Squat', 'dbsquats');");
         db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E008', 'Pull Ups', 'dbpullups');");
         db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E009', 'Dumbbell Curls', 'dbbicepcurls');");

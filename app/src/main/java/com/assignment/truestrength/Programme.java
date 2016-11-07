@@ -106,31 +106,37 @@ public class Programme extends AppCompatActivity {
         String[] imgArr = new String[items.size()];
 
         for (int i = 0; i < items.size(); i++) {
-            titleArr[i] = items.get(i).exerciseName;
+            titleArr[i] = i+1 + ". " + items.get(i).exerciseName;
             imgArr[i] = items.get(i).photoId;
         }
 
-        Dialog dialog = new Dialog(this);
-        dialog.setContentView(R.layout.summarycard);
+        final AlertDialog.Builder   alertdialog = new AlertDialog.Builder(this);
 
-        AlertDialog.Builder   alertdialog = new AlertDialog.Builder(this);
         LayoutInflater inflaterr = (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View  viewtemplelayout= inflaterr.inflate(R.layout.activity_summary, null);
+
+
+        alertdialog.setTitle("Programme Summary: " + progName);
+
         SummaryAdapter adap=new SummaryAdapter(this, titleArr, imgArr);
         ListView list = (ListView) viewtemplelayout.findViewById(R.id.summlist);
         list.setAdapter(adap);
-        alertdialog.setTitle("Programme Summary: " + progName);
+
+        Button beginBtn = (Button) viewtemplelayout.findViewById(R.id.begin);
+
         alertdialog.setView(viewtemplelayout);
-        alertdialog.show();
+
+        final AlertDialog adialog = alertdialog.create();
 
 
-        /*
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(progName);
-        builder.setMessage(Html.fromHtml(s));
-        builder.setPositiveButton(Html.fromHtml("<b>START WORKOUT</b>"), null);
-        AlertDialog dialog = builder.show();
-*/
+        beginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                adialog.dismiss();
+            }});
+        adialog.show();
+
 
     }
 

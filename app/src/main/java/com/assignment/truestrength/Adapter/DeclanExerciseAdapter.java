@@ -19,7 +19,9 @@ public class DeclanExerciseAdapter extends RecyclerView.Adapter<DeclanExerciseAd
     private List<ExerciseGetterSetter> listData;
     private LayoutInflater inflater;
 
-
+    public List<ExerciseGetterSetter> getListData(){
+        return this.listData;
+    }
     //ItemListener & ItemCallBack Methods
     private ItemClickCallBack itemClickCallBack;
 
