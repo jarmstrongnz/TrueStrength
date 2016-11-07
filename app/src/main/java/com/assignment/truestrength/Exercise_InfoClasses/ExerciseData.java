@@ -219,9 +219,8 @@ public class ExerciseData {
 
     };
 
-    private static final int[] exercise_vid = {
-
-            ,
+    private static final String[] exercise_vid = {
+            "tVB1q8zkP3o",
 
 
 
@@ -390,7 +389,7 @@ public class ExerciseData {
             item.setExercise_img1(exercise_img1[i]);
             item.setExercise_img2(exercise_img2[i]);
             item.setExercise_desc(exercise_desc[i]);
-
+            item.setExercise_desc(exercise_vid[i]);
 
 
             data.add(item);

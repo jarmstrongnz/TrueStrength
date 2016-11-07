@@ -5,25 +5,25 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="4772532242854"
+    timestamp="14169414211224"
     token="-7466661473369350731"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1612" />
+        duration="411" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="114" />
+        duration="39" />
     <task
         name="verifier"
-        duration="17" />
+        duration="7" />
 
     <artifact
-        location="C:\Users\Declan\Documents\GitHub\TrueStrength-test2jonny\app\build\outputs\apk\app-debug.apk"
+        location="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build

@@ -2962,9 +2962,9 @@ containing a value of this type.
         public static final int useLogo=0x7f0c0016;
         public static final int view_offset_helper=0x7f0c000c;
         public static final int vtitle=0x7f0c007e;
-        public static final int vview=0x7f0c007f;
         public static final int withText=0x7f0c003c;
         public static final int wrap_content=0x7f0c0022;
+        public static final int ytplayer=0x7f0c007f;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur=0x7f0a0001;

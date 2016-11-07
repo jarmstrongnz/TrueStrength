@@ -2,12 +2,26 @@ package com.assignment.truestrength.UI;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.assignment.truestrength.R;
 
-public class ExerciseDetails extends AppCompatActivity {
+import android.widget.Toast;
+import android.widget.VideoView;
+
+import com.google.android.youtube.player.YouTubeBaseActivity;
+import com.google.android.youtube.player.YouTubeInitializationResult;
+import com.google.android.youtube.player.YouTubePlayer;
+import com.google.android.youtube.player.YouTubePlayer.ErrorReason;
+import com.google.android.youtube.player.YouTubePlayer.PlaybackEventListener;
+import com.google.android.youtube.player.YouTubePlayer.PlayerStateChangeListener;
+import com.google.android.youtube.player.YouTubePlayer.Provider;
+import com.google.android.youtube.player.YouTubePlayerView;
+
+public class ExerciseDetails extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
     //OnClick Variables
     private static final String BUNDLE_EXTRAS = "BUNDLE_EXTRAS";
     private static final String exercise_name = "exercise_name";
@@ -21,11 +35,19 @@ public class ExerciseDetails extends AppCompatActivity {
     private static final String exercise_img2 = "exercise_img2";
     private static final String exercise_desc = "exercise_desc";
 
+    public static final String API_KEY = "AIzaSyCCriCWBCoyKUCnjTkDlOAVpJGGWdrUWtA";
+    public static final String VIDEO_ID = "tVB1q8zkP3o";
 
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise_details);
+
+        /** Initializing YouTube Player View **/
+        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.ytplayer);
+        youTubePlayerView.initialize(API_KEY, this);
+
 
         Bundle extras = getIntent().getBundleExtra(BUNDLE_EXTRAS);
 
@@ -47,5 +69,70 @@ public class ExerciseDetails extends AppCompatActivity {
         ((TextView) findViewById(R.id.data_info)).setText(extras.getString(exercise_desc));
 
 
+
     }
+
+    @Override
+    public void onInitializationFailure(Provider provider, YouTubeInitializationResult result) {
+        Toast.makeText(this, "Failured to Initialize!", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean wasRestored) {
+        /** add listeners to YouTubePlayer instance **/
+        player.setPlayerStateChangeListener(playerStateChangeListener);
+        player.setPlaybackEventListener(playbackEventListener);
+        /** Start buffering **/
+        if (!wasRestored) {
+            player.cueVideo(VIDEO_ID);
+        }
+    }
+
+    private PlaybackEventListener playbackEventListener = new PlaybackEventListener() {
+        @Override
+        public void onBuffering(boolean arg0) {
+        }
+
+        @Override
+        public void onPaused() {
+        }
+
+        @Override
+        public void onPlaying() {
+        }
+
+        @Override
+        public void onSeekTo(int arg0) {
+        }
+
+        @Override
+        public void onStopped() {
+        }
+    };
+    private PlayerStateChangeListener playerStateChangeListener = new PlayerStateChangeListener() {
+        @Override
+        public void onAdStarted() {
+        }
+
+        @Override
+        public void onError(ErrorReason arg0) {
+        }
+
+        @Override
+        public void onLoaded(String arg0) {
+        }
+
+        @Override
+        public void onLoading() {
+        }
+
+        @Override
+        public void onVideoEnded() {
+        }
+
+        @Override
+        public void onVideoStarted() {
+        }
+    };
 }
+

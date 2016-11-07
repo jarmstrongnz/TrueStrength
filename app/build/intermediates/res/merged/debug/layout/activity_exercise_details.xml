@@ -166,14 +166,15 @@
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white" />
 
-        <VideoView
-            android:id="@+id/vview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@+id/vtitle"
-            android:layout_marginTop="10dp" />
 
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/ytplayer"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/vtitle"
+            >
+
+        </com.google.android.youtube.player.YouTubePlayerView>
 
         <!-- Fields that are used to store the information from ExerciseData -->
 
