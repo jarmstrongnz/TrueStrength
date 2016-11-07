@@ -1,5 +1,6 @@
 package com.assignment.truestrength;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -18,7 +19,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.assignment.truestrength.Adapter.DeclanExerciseAdapter;
 import com.assignment.truestrength.Exercise_InfoClasses.ExerciseData;
@@ -30,12 +31,14 @@ import com.jjoe64.graphview.series.LineGraphSeries;
 
 import java.util.ArrayList;
 
+import static android.R.string.cancel;
+import static android.R.string.ok;
+
 public class MainActivity extends AppCompatActivity {
 
+    Toolbar toolbar;
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
-
-    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +81,8 @@ public class MainActivity extends AppCompatActivity {
 
                 AlertDialog.Builder a_builder = new AlertDialog.Builder(MainActivity.this);
                 a_builder.setView(v);
-                AlertDialog alert = a_builder.create();
+/*                a_builder.setCancelable(false);*/
+                final AlertDialog alert = a_builder.create();
                 alert.show();
 
                 return true;
@@ -96,8 +100,8 @@ public class MainActivity extends AppCompatActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.frag_programme_list, container, false);
 
-            Button button = (Button) rootView.findViewById(R.id.button);
-            Button button6 = (Button) rootView.findViewById(R.id.button6);
+            ImageButton button = (ImageButton) rootView.findViewById(R.id.button);
+            ImageButton button6 = (ImageButton) rootView.findViewById(R.id.button6);
 
             button6.setOnClickListener(new OnClickListener() {
                 @Override
@@ -129,17 +133,13 @@ public class MainActivity extends AppCompatActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.frag_progress, container, false);
 
-            double y, x;
-            x = -5.0;
-
-            GraphView testGraph = (GraphView) rootView.findViewById(R.id.testGraph);
-            series = new LineGraphSeries<>();
-            for (int i = 0; i < 500; i++) {
-                x = x + 0.11;
-                y = Math.sin(x);
-                series.appendData(new DataPoint(x, y), true, 500);
-            }
-            testGraph.addSeries(series);
+            GraphView graph = (GraphView) rootView.findViewById(R.id.testGraph);
+            LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[]{
+                    new DataPoint(0, 1),
+                    new DataPoint(1, 5),
+                    new DataPoint(2, 3)
+            });
+            graph.addSeries(series);
             return rootView;
         }
     }
@@ -233,7 +233,7 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Porgrammes";
+                    return "Programmes";
                 case 1:
                     return "Progress";
                 case 2:

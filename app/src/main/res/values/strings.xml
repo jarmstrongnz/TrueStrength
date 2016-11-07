@@ -10,4 +10,5 @@
     <string name="backButtonText"><![CDATA[<]]></string>
     <string name="extra_information">Extra information</string>
     <string name="heading">Heading</string>
+    <string name="repsText">00reps</string>
 </resources>

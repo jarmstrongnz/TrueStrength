@@ -1,35 +1,23 @@
 package com.assignment.truestrength;
 
-import android.app.Activity;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.Button;
 
 import java.util.List;
-
-import static android.media.CamcorderProfile.get;
 
 public class Programme extends AppCompatActivity {
 
     DatabaseHelper myDB;
     String progID;
 
-    // this class will be each exercise in the workout program
-
-
-//    private void createData ()
-    //  {
-    //    items = new ArrayList<>();
-//
-
-    //  }
     Bundle progIDdata;
     //TODO going to be list of exercises in the workout routine
     private List<MyItems> items;
@@ -43,6 +31,36 @@ public class Programme extends AppCompatActivity {
 
         progIDdata = getIntent().getExtras();
         progID = progIDdata.getString("progID");
+        Button workooutComplete = (Button) findViewById(R.id.workooutComplete);
+
+        workooutComplete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
+                builder.setTitle("Congrats!");
+                builder.setMessage("Great Work! You lifted a total of XXXXXXXXXkgs!\n\n Want to share this with your friends?");
+                builder.setPositiveButton("Share", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent i = new Intent(Intent.ACTION_SEND);
+                        i.setType("text/plain");
+                        i.putExtra(Intent.EXTRA_SUBJECT, "Workout Complete!");
+                        i.putExtra(Intent.EXTRA_TEXT, "I just lifted a total of XXXXXXX kgs! Thanks to the help of the TrueStrength app!");
+                        startActivity(Intent.createChooser(i, "Share URL"));
+                    }
+                });
+                builder.setNegativeButton("No Thanks", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent mainActivity = new Intent(getBaseContext(), MainActivity.class);
+                        startActivity(mainActivity);
+                    }
+                });
+                AlertDialog dialog = builder.show();
+
+
+            }
+        });
 
         items = myDB.getProgExArray(progID);
         String progName = myDB.getProgName(progID);
@@ -78,5 +96,7 @@ public class Programme extends AppCompatActivity {
         builder.setPositiveButton(Html.fromHtml("<b>START WORKOUT</b>"), null);
         AlertDialog dialog = builder.show();
 
+
     }
+
 }

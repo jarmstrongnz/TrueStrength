@@ -20,12 +20,12 @@
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.0\\res\\layout\\design_bottom_navigation_item.xml"
     },
     {
-        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
-        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\layout\\activity_login.xml"
-    },
-    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag_search.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\layout\\frag_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
@@ -68,12 +68,12 @@
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
-        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\notification_media_cancel_action.xml"
-    },
-    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag_programme_list.xml",

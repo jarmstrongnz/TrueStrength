@@ -33,7 +33,10 @@
 
 
         <activity android:name=".Login" />
-        <activity android:name=".UI.ExerciseDetails"></activity>
+        <activity android:name=".UI.ExerciseDetails"
+            android:label="Information"
+            android:parentActivityName=".MainActivity">
+        </activity>
 
     </application>
 

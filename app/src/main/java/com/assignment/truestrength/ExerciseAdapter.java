@@ -5,8 +5,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -16,7 +17,8 @@ import java.util.List;
  * This class is parallel with exercise_cardview.xml
  */
 
-public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.ItemViewHolder> {
+public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.ItemViewHolder> /*implements View.OnFocusChangeListener */ {
+    DatabaseHelper myDB;
     private List<MyItems> myItems;
 
     // constructor for this class
@@ -24,10 +26,96 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.ItemVi
         this.myItems = items;
     }
 
+    /* @Override
+     public void onFocusChange(View v, boolean hasFocus) {
+         switch(v.getId()){
+             case R.id.exercise_weightsText0:
+
+                 if(hasFocus){
+                     Toast.makeText(v.getContext(), "got the focus", Toast.LENGTH_LONG).show();
+                 }else {
+                     Toast.makeText(v.getContext(), "lost the focus", Toast.LENGTH_LONG).show();
+                 }
+
+                 break;
+
+         }
+     }
+ */
     @Override
     public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // create a new view
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.excercise_cardview, parent, false);
+        myDB = new DatabaseHelper(v.getContext());
+
+        final TextView exercise_headingText = (TextView) v.findViewById(R.id.exercise_headingText);
+        final EditText exercise_weightsText0 = (EditText) v.findViewById(R.id.exercise_weightsText0);
+        final EditText exercise_weightsText1 = (EditText) v.findViewById(R.id.exercise_weightsText1);
+        final EditText exercise_weightsText2 = (EditText) v.findViewById(R.id.exercise_weightsText2);
+        final EditText exercise_repsText0 = (EditText) v.findViewById(R.id.exercise_repsText0);
+        final EditText exercise_repsText1 = (EditText) v.findViewById(R.id.exercise_repsText1);
+        final EditText exercise_repsText2 = (EditText) v.findViewById(R.id.exercise_repsText2);
+
+        exercise_weightsText0.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (!hasFocus) {
+                    myDB.setSet1weight(Integer.parseInt(exercise_weightsText0.getText().toString()), exercise_headingText.getText().toString());
+
+                }
+            }
+        });
+
+        exercise_weightsText1.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (!hasFocus) {
+                    myDB.setSet2weight(Integer.parseInt(exercise_weightsText1.getText().toString()), exercise_headingText.getText().toString());
+                }
+            }
+        });
+
+
+        exercise_weightsText2.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (!hasFocus) {
+                    myDB.setSet3weight(Integer.parseInt(exercise_weightsText2.getText().toString()), exercise_headingText.getText().toString());
+                }
+            }
+        });
+
+
+        exercise_repsText0.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (!hasFocus) {
+                    myDB.setSet1reps(Integer.parseInt(exercise_repsText0.getText().toString()), exercise_headingText.getText().toString());
+                }
+            }
+        });
+
+
+        exercise_repsText1.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (!hasFocus) {
+                    myDB.setSet2reps(Integer.parseInt(exercise_repsText1.getText().toString()), exercise_headingText.getText().toString());
+                }
+            }
+        });
+
+
+        exercise_repsText2.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (!hasFocus) {
+                    myDB.setSet3reps(Integer.parseInt(exercise_repsText2.getText().toString()), exercise_headingText.getText().toString());
+                }
+            }
+        });
+
+
         return new ItemViewHolder(v);
     }
 
@@ -48,6 +136,8 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.ItemVi
         holder._weight0.setText(myItems.get(i).weight0);
         holder._weight1.setText(myItems.get(i).weight1);
         holder._weight2.setText(myItems.get(i).weight2);
+
+
     }
 
     @Override
@@ -58,7 +148,7 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.ItemVi
     // internal class
     static class ItemViewHolder extends RecyclerView.ViewHolder {
         CardView _cardView;
-//        ImageView _image;
+        //        ImageView _image;
         TextView _exerciseName;
         TextView _weight0, _weight1, _weight2;
         TextView _rep0, _rep1, _rep2;

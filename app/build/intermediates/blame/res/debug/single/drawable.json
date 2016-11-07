@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dbseatedcablerow.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\dbseatedcablerow.jpg"
+    },
+    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bicepcurl.jpg",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\bicepcurl.jpg"
     },
@@ -16,12 +20,32 @@
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dblatraises.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\dblatraises.jpg"
+    },
+    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dbbicepcurls.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\dbbicepcurls.jpg"
+    },
+    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gym1.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\gym1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dbbutterflies.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\dbbutterflies.jpg"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dbtriceppushdown.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\dbtriceppushdown.jpg"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
@@ -32,12 +56,24 @@
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dbtricepdips.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\dbtricepdips.jpg"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dbbenchpress.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\dbbenchpress.jpg"
+    },
+    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\barbellsquat2.jpg",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\barbellsquat2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dbfrontraises.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\dbfrontraises.jpg"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
@@ -48,12 +84,24 @@
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.0\\res\\drawable\\design_fab_background.xml"
     },
     {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dbdeclinecrunch.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\dbdeclinecrunch.jpg"
+    },
+    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gym3.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\gym3.jpg"
+    },
+    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\minilogo.png",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\minilogo.png"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
@@ -86,6 +134,10 @@
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dblatpulldown.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\dblatpulldown.jpg"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\barbellsquat1.jpg",
@@ -136,12 +188,12 @@
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sumo1.jpg",
-        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\sumo1.jpg"
-    },
-    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sumo1.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\sumo1.jpg"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
@@ -156,12 +208,20 @@
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dbsquats.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\dbsquats.jpg"
+    },
+    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gym2fat2fit.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\gym2fat2fit.jpg"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
@@ -206,6 +266,10 @@
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sumo2.jpg",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\sumo2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dbpullups.jpg",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\dbpullups.jpg"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",

@@ -10,9 +10,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.assignment.truestrength.Programme">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/my_recycler_view"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/workooutComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_recycler_view"
+                android:text="Workout Complete" />
+
+
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
