@@ -188,12 +188,12 @@
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sumo1.jpg",
         "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\src\\main\\res\\drawable\\sumo1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
         "merged": "C:\\Users\\jambo\\Android_Projects\\TrueStrength\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",

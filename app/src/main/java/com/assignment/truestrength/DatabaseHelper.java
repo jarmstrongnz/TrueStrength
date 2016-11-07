@@ -26,24 +26,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE programme (programmeID TEXT PRIMARY KEY , programmeName TEXT);");
-        db.execSQL("CREATE TABLE exercise (exerciseID TEXT PRIMARY KEY, exerciseName TEXT);");
+        db.execSQL("CREATE TABLE exercise (exerciseID TEXT PRIMARY KEY, exerciseName TEXT, exercisePic TEXT);");
         db.execSQL("CREATE TABLE programmeExercise (programmeExerciseID TEXT PRIMARY KEY, programmeID TEXT REFERENCES programme(programmeID), exerciseID TEXT REFERENCES exercise(exerciseID), sets INTEGER, set1repsDef INTEGER, set2repsDef INTEGER, set3repsDef INTEGER, set1weightDef INTEGER, set2weightDef INTEGER, set3weightDef INTEGER);");
         db.execSQL("CREATE TABLE session (sessionID INTEGER PRIMARY KEY AUTOINCREMENT,programmeID TEXT REFERENCES programme(programmeID),sessionDate DATE);");
         db.execSQL("CREATE TABLE sessionExercise (sessionExerciseID INTEGER PRIMARY KEY AUTOINCREMENT, programmeExerciseID TEXT REFERENCES programme(programmeID), sessionID INTEGER REFERENCES session(sessionID), set1reps INTEGER, set1weight INTEGER, set2reps INTEGER, set2weight INTEGER, set3reps INTEGER, set3weight INTEGER);");
         db.execSQL("INSERT INTO programme (programmeID, programmeName)VALUES ('P000', 'Fat to Fit');");
         db.execSQL("INSERT INTO programme (programmeID, programmeName)VALUES ('P001', 'Fun Fitness');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName)VALUES ('E000', 'Benchpress', 'R.drawable.dbbenchpress');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName)VALUES ('E001', 'Butterflys', 'R.drawable.dbbutterflies');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName)VALUES ('E002', 'Front Raises', 'R.drawable.dbfrontraises');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName)VALUES ('E003', 'Lat Raises', 'R.drawable.dblatraises');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName)VALUES ('E004', 'Tricep Pushdowns'', 'R.drawable.dbtriceppushdown');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName)VALUES ('E005', 'Tricep Dips', 'R.drawable.dbtricepdips');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName)VALUES ('E006', 'Incline Situps', 'R.drawable.dbdeclinecrunch');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName)VALUES ('E007', 'Squat', 'R.drawable.dbsquats');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName)VALUES ('E008', 'Pull Ups', 'R.drawable.dbpullups');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName)VALUES ('E009', 'Dumbbell Curls', 'R.drawable.dbbicepcurls');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName)VALUES ('E010', 'Lat Pulldown', 'R.drawable.dblatpulldown');");
-        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName)VALUES ('E011', 'Seated Cable Row', 'R.drawable.dbseatedcablerow');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E000', 'Benchpress', 'R.drawable.dbbenchpress');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E001', 'Butterflys', 'R.drawable.dbbutterflies');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E002', 'Front Raises', 'R.drawable.dbfrontraises');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E003', 'Lat Raises', 'R.drawable.dblatraises');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E004', 'Tricep Pushdowns', 'R.drawable.dbtriceppushdown');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E005', 'Tricep Dips', 'R.drawable.dbtricepdips');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E006', 'Incline Situps', 'R.drawable.dbdeclinecrunch');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E007', 'Squat', 'R.drawable.dbsquats');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E008', 'Pull Ups', 'R.drawable.dbpullups');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E009', 'Dumbbell Curls', 'R.drawable.dbbicepcurls');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E010', 'Lat Pulldown', 'R.drawable.dblatpulldown');");
+        db.execSQL("INSERT INTO exercise (exerciseID, exerciseName, exercisePic)VALUES ('E011', 'Seated Cable Row', 'R.drawable.dbseatedcablerow');");
         db.execSQL("INSERT INTO programmeExercise (programmeExerciseID, programmeID, exerciseID, sets, set1repsDef, set2repsDef, set3repsDef, set1weightDef, set2weightDef, set3weightDef)VALUES ('PE000', 'P000', 'E000', 3, 6, 8, 12, 0, 0, 0);");
         db.execSQL("INSERT INTO programmeExercise (programmeExerciseID, programmeID, exerciseID, sets, set1repsDef, set2repsDef, set3repsDef, set1weightDef, set2weightDef, set3weightDef)VALUES ('PE001', 'P000', 'E001', 3, 6, 8, 12, 0, 0, 0);");
         db.execSQL("INSERT INTO programmeExercise (programmeExerciseID, programmeID, exerciseID, sets, set1repsDef, set2repsDef, set3repsDef, set1weightDef, set2weightDef, set3weightDef)VALUES ('PE002', 'P000', 'E002', 3, 6, 8, 12, 0, 0, 0);");
@@ -138,7 +138,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("INSERT INTO session (programmeID, sessionDate) VALUES ('" + progID + "', datetime());");
 
         for (i = 0; i < progExIDArr.length; i++) {
-            db.execSQL("INSERT INTO sessionExercise (sessionID, programmeExerciseID, set1reps, set2reps, set3reps, set1weight, set2weight, set3weight) VALUES ((SELECT sessionID FROM session ORDER BY sessionID DESC LIMIT 1), '"+ progExIDArr[i] +"', (SELECT set1repsdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set1repsdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set1repsdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set1weightdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set2weightdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set3weightdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'));");
+            db.execSQL("INSERT INTO sessionExercise (sessionID, programmeExerciseID, set1reps, set2reps, set3reps, set1weight, set2weight, set3weight) VALUES ((SELECT sessionID FROM session ORDER BY sessionID DESC LIMIT 1), '"+ progExIDArr[i] +"', (SELECT set1repsdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set2repsdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set3repsdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set1weightdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set2weightdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'), (SELECT set3weightdef FROM programmeExercise WHERE programmeExerciseID = '"+ progExIDArr[i] +"'));");
         }
 
         Cursor crs1 = db.rawQuery("SELECT sessionExerciseID FROM sessionExercise WHERE sessionID = (SELECT sessionID FROM session ORDER BY sessionID DESC LIMIT 1);", null);
