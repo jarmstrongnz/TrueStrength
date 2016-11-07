@@ -1,4 +1,4 @@
-#Mon Nov 07 21:16:35 NZDT 2016
+#Mon Nov 07 21:47:02 NZDT 2016
 base.0=C\:\\Users\\Declan\\Documents\\GitHub\\TrueStrengthz\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_2a470406432affd91ce5010a04dc41535d7bdb60
 renamed.1=classes.dex
 renamed.0=classes2.dex

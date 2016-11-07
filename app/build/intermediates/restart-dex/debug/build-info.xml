@@ -5,19 +5,19 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="2000438818640"
+    timestamp="3826061656057"
     token="-2278107477361494574"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="306" />
+        duration="581" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="31" />
+        duration="34" />
     <task
         name="verifier"
         duration="2" />
@@ -27,7 +27,7 @@
         type="MAIN" />
 
     <build
-        timestamp="2000438818640"
+        timestamp="3826061656057"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\outputs\apk\app-debug.apk"

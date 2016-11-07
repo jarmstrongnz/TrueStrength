@@ -83,7 +83,7 @@ public class ExerciseDetails extends YouTubeBaseActivity implements YouTubePlaye
     public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean wasRestored) {
         player.setPlayerStateChangeListener(playerStateChangeListener);
         player.setPlaybackEventListener(playbackEventListener);
-        player.setPlayerStyle(YouTubePlayer.PlayerStyle.CHROMELESS);
+        player.setPlayerStyle(YouTubePlayer.PlayerStyle.MINIMAL);
         //Start buffering
         if (!wasRestored) {
             player.cueVideo(VIDEO_ID);
