@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.assignment.truestrength.R;
 
 import android.widget.Toast;
-import android.widget.VideoView;
+
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -35,29 +35,31 @@ public class ExerciseDetails extends YouTubeBaseActivity implements YouTubePlaye
     private static final String exercise_img2 = "exercise_img2";
     private static final String exercise_desc = "exercise_desc";
 
+    //Youtube Variables
     public static final String API_KEY = "AIzaSyCCriCWBCoyKUCnjTkDlOAVpJGGWdrUWtA";
+
+    //What video will be played
     public static final String VIDEO_ID = "tVB1q8zkP3o";
 
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise_details);
 
-        /** Initializing YouTube Player View **/
+        ///Initializing YouTube Player View
         YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.ytplayer);
         youTubePlayerView.initialize(API_KEY, this);
+
 
 
         Bundle extras = getIntent().getBundleExtra(BUNDLE_EXTRAS);
 
 
         //Information that will be displayed
-
         //Links to 'activity_exercise_details.xml' textview detail_name
         //Carries exercise_name data from 'ExerciseData'
         ((TextView) findViewById(R.id.detail_name)).setText(extras.getString(exercise_name));
-
         ((TextView) findViewById(R.id.data_type)).setText(extras.getString(exercise_type));
         ((TextView) findViewById(R.id.data_worked)).setText(extras.getString(exercise_worked));
         ((TextView) findViewById(R.id.data_other)).setText(extras.getString(exercise_other));
@@ -69,9 +71,9 @@ public class ExerciseDetails extends YouTubeBaseActivity implements YouTubePlaye
         ((TextView) findViewById(R.id.data_info)).setText(extras.getString(exercise_desc));
 
 
-
     }
 
+    //Youtube Methods
     @Override
     public void onInitializationFailure(Provider provider, YouTubeInitializationResult result) {
         Toast.makeText(this, "Failured to Initialize!", Toast.LENGTH_LONG).show();
@@ -79,10 +81,10 @@ public class ExerciseDetails extends YouTubeBaseActivity implements YouTubePlaye
 
     @Override
     public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean wasRestored) {
-        /** add listeners to YouTubePlayer instance **/
         player.setPlayerStateChangeListener(playerStateChangeListener);
         player.setPlaybackEventListener(playbackEventListener);
-        /** Start buffering **/
+        player.setPlayerStyle(YouTubePlayer.PlayerStyle.CHROMELESS);
+        //Start buffering
         if (!wasRestored) {
             player.cueVideo(VIDEO_ID);
         }
@@ -109,6 +111,7 @@ public class ExerciseDetails extends YouTubeBaseActivity implements YouTubePlaye
         public void onStopped() {
         }
     };
+
     private PlayerStateChangeListener playerStateChangeListener = new PlayerStateChangeListener() {
         @Override
         public void onAdStarted() {
@@ -134,5 +137,8 @@ public class ExerciseDetails extends YouTubeBaseActivity implements YouTubePlaye
         public void onVideoStarted() {
         }
     };
+
+
+
 }
 

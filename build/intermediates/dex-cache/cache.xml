@@ -2,24 +2,6 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\com.android.support-animated-vector-drawable-25.0.0_9bbadbbf5c31f3c4bf1c8f0c1870cf1bd77ff039.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\com.android.support-support-compat-25.0.0_70f0341b2b6e1a8c0a44468edbdbbe5b6f92fb5e.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
         jumboMode="true"
@@ -38,24 +20,6 @@
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.0_9bbadbbf5c31f3c4bf1c8f0c1870cf1bd77ff039\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\internal_impl-25.0.0_36dc062597df1c77c4ae76390cbc35849b31ac49.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\internal_impl-25.0.0_8f795cafce4b2e31f06f48a075b18a526d36d101.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
         jumboMode="true"
@@ -63,15 +27,6 @@
         revision="24.0.2"
         sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_36dc062597df1c77c4ae76390cbc35849b31ac49\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\libs\GraphView-4.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="3626a38455159707e355da96a61e598fbbc049e9">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\GraphView-4.2.1_97f4929660a5b34ee308c78c958a7190a8699eb1.jar" />
     </item>
     <item
         is-multidex="true"
@@ -101,15 +56,6 @@
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.0.0_38cc81e6f346ae2c92fc1598771d5a7001d46d3a\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\com.android.support-support-vector-drawable-25.0.0_92bd7fe690f433156121fed60f1fd180882633b8.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
         jumboMode="true"
@@ -128,15 +74,6 @@
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.0_cbc0170f3a42f5dcd13f2363a17ee47fc40204de\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\com.android.support-support-fragment-25.0.0_3e579869d49b91b5b035e2a55d7108633117894b.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
         jumboMode="true"
@@ -144,15 +81,6 @@
         revision="24.0.2"
         sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_bd1a01d4f81f652e2ed1eb5b7d6bda92b290025b\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-25.0.0_95d5e15046ff2f289b423162702e04d380c2a3fb.jar" />
     </item>
     <item
         is-multidex="true"
@@ -164,15 +92,6 @@
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.0_92bd7fe690f433156121fed60f1fd180882633b8\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\com.android.support-support-media-compat-25.0.0_cbc0170f3a42f5dcd13f2363a17ee47fc40204de.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
         jumboMode="true"
@@ -182,21 +101,12 @@
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.0_3e579869d49b91b5b035e2a55d7108633117894b\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8dd49930e4f9dde1a42d37e362b9fea8b1b69c0d">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\com.android.support-cardview-v7-24.0.0_5756d151985a80d4466a4df517ab5553cfd3d588.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="f081d1e5acef23252b1bb91cd3f206cf2c36fdc2">
+        sha1="0e9c1af38a4484bd59f5dda3e78ce98421626b39">
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2a470406432affd91ce5010a04dc41535d7bdb60\classes.dex" />
     </item>
     <item
@@ -218,15 +128,6 @@
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_93a1dc283047b20dcde05c6c743bdb87bcf8dcb1\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\internal_impl-25.0.0_93a1dc283047b20dcde05c6c743bdb87bcf8dcb1.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
         jumboMode="true"
@@ -245,33 +146,6 @@
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_4079bbbba779e2a53ee892f161055240a3623bd6\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\com.android.support-support-core-utils-25.0.0_582ed298b29ac3095fa54e7cc27330a0c7d86f80.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\internal_impl-25.0.0_4079bbbba779e2a53ee892f161055240a3623bd6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\com.android.support-recyclerview-v7-25.0.0_38cc81e6f346ae2c92fc1598771d5a7001d46d3a.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\libs\YouTubeAndroidPlayerApi.jar"
         jumboMode="true"
@@ -279,15 +153,6 @@
         revision="24.0.2"
         sha1="3c4f96ff493456651cc7bdb0b47e10eb25545a16">
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\2\YouTubeAndroidPlayerApi_0af596b143a96a996ca30dbed325f7bc843dc9cb\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\internal_impl-25.0.0_bd1a01d4f81f652e2ed1eb5b7d6bda92b290025b.jar" />
     </item>
     <item
         is-multidex="true"
@@ -304,17 +169,8 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="f94dce341cf0af4a687cf708747a678b41dd2c2b">
+        sha1="af17b6c28cd35456caf930816a961beb46e20fce">
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ee1553676865ca0ff5a0fbd419513fcced574939\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Declan\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\support-annotations-25.0.0_67ffe704bc7d0b3142bbf7acebb9832d98c4fe8b.jar" />
     </item>
     <item
         is-multidex="true"
@@ -335,15 +191,6 @@
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.0.0_97d7c35eb3edbf214e3be124c59a8727c48af909\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\com.android.support-transition-25.0.0_ba5f268aadfaf97380552474c5552faa1fb1e9d0.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.0\jars\classes.jar"
         jumboMode="true"
@@ -353,15 +200,6 @@
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.0.0_ba5f268aadfaf97380552474c5552faa1fb1e9d0\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="26674000177e45447a0326a6ad84612761199a13">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\com.android.support-support-core-ui-25.0.0_b72a63dd7d1187a0e1331c2311ade6071054ef27.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
         jumboMode="true"
@@ -369,24 +207,6 @@
         revision="24.0.2"
         sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
         <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.0_e843a4113be22ff3ae5f60d516f45b41cf29b055\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\design\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\com.android.support-design-25.0.0_97d7c35eb3edbf214e3be124c59a8727c48af909.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
-        <dex dex="C:\Users\Declan\Documents\GitHub\TrueStrengthz\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-25.0.0_e843a4113be22ff3ae5f60d516f45b41cf29b055.jar" />
     </item>
 
 </items>

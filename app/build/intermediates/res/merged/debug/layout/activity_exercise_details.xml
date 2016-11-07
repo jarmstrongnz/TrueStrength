@@ -172,11 +172,12 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_below="@+id/vtitle"
+            android:layout_marginTop="10dp"
             >
 
         </com.google.android.youtube.player.YouTubePlayerView>
 
-        <!-- Fields that are used to store the information from ExerciseData -->
+         <!--Fields that are used to store the information from ExerciseData -->
 
         <TextView
             android:id="@+id/data_worked"
